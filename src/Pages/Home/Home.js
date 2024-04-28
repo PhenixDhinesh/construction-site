@@ -109,6 +109,7 @@ export default function Home() {
             <div>reliability</div>
             <div>quality</div>
           </div>
+         
         </div>
       </div>
 

@@ -130,6 +130,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+
 }
 .core_values_container > h3 {
   font-size: 36px;
@@ -138,12 +139,7 @@ button {
   line-height: 43.57px;
   color: #000000;
 }
-.core_values {
-  overflow-x: auto !important; /* Enables horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Snap horizontally */
-  white-space: nowrap; /* Prevents content wrapping */
-  padding: 10px; /* Optional padding for nicer appearance */
-}
+
 @media (max-width: 767px) {
   .core_values_container {
     align-items: flex-start;
@@ -160,18 +156,29 @@ button {
   .animation_scroll > div {
     height: 33px !important;
   }
-
-  .animation_scroll {
-    display: flex; /* Enables flex layout */
+.animation_scroll {
     gap: 3rem !important;
-    /* Space between items */
+
   }
 }
-.animation_scroll {
-  display: flex; /* Enables flex layout */
-  gap: 10rem; /* Space between items */
+.core_values {
+  white-space: nowrap; 
+  width:100%;
+  padding: 10px; 
 }
-
+.animation_scroll {
+  display:flex; /* Enables flex layout */
+  gap: 10rem;
+  animation: scroll 15s linear infinite; 
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .animation_scroll > div {
   height: 48px;
   padding: 0 50px;
@@ -185,7 +192,6 @@ button {
   display: flex; /* Ensures content is centered vertically */
   align-items: center; /* Centers content vertically */
   font-family: "Inter", sans-serif; /* Correct font-family */
-  scroll-snap-align: start; /* Ensures items snap at the start */
 }
 .virtual_construction_contianer {
   /* margin-top:5rem; */
