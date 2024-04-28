@@ -19,7 +19,77 @@
   justify-content: flex-start;
   gap: 2rem;
 }
+.nav_sec > .nav_link  :hover{
+color:#714e4e;
+cursor: pointer;
+}
+.service_container{
+  width:267px;
+  height:201px;
+  border-radius: 1px 1px 0 0;
+  display: flex;
+  position: absolute;
+  z-index:1000;
+  right:25rem;
+  background: #F7F7F7;
+  flex-direction: column;
+  padding:15px 10px;
+}
+.Off_service_container{
+  width:267px;
+  height:201px;
+  border-radius: 1px 1px 0 0;
+  display: flex;
+  z-index:1000;
+  background: #F7F7F7;
+  flex-direction: column;
+  padding:15px 10px;
+}
+.Off_service_container > .Off_services{
+  display:flex;
+justify-content: space-between;
+padding:10px 10px;
+align-items: center;
+}
+.Off_service_container > .Off_services > h3{
+  font-weight: 400;
+  font-size:16px;
+}
+.service_container > .services{
+display:flex;
+justify-content: space-between;
+padding:10px 20px;
+align-items: center;
+}
+.service_container > .services >h3{
+  font-size: 14px;
+  font-weight:500;
+  line-height: 16.94px;
+  color:#000000;
+  font-family: 'Inter',sans-serif;
+  text-transform: capitalize;
+}
+.service_container > .services >h3:hover{
+  cursor: pointer;
+}
+.offcanvas_container{
+  padding:2rem 1rem;
+}
+.offcanvas_lists{
+  margin-top:2rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
 
+}
+.offcanvas_lists:hover{
+  cursor: pointer;
+}
+.off_service{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
 button {
   width: 165px;
   height: 42px;

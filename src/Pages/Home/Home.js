@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styleSheets/home.css";
 import logo from "../../assets/Logo.svg";
 import groups from "../../assets/groups.svg";
@@ -13,10 +13,78 @@ import client3 from "../../assets/client3.svg";
 import client4 from "../../assets/client4.svg";
 import whiteLogo from "../../assets/whiteLogo.svg";
 import poweredBy from "../../assets/poweredBy.svg";
-import menu from '../../assets/menu.svg'
-import banner from "../../assets/banner.svg"
-import landing from "../../assets/res_banner.svg"
+import menu from "../../assets/menu.svg";
+import banner from "../../assets/banner.svg";
+import landing from "../../assets/res_banner.svg";
+import { FaAngleRight } from "react-icons/fa6";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import { LiaAngleDownSolid } from "react-icons/lia";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 export default function Home() {
+  const [showBox, setShowBox] = useState(false);
+  const [showOffBox, setShowOffBox] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const toggleServicesDropdown = (e) => {
+    // Prevent the default click behavior from closing the drawer
+    e.stopPropagation();
+    setShowServicesDropdown(!showServicesDropdown);
+  };
+
+
+    const drawerList = (
+      <Box sx={{ width: 300 }} role="presentation">
+        <div className="offcanvas_container">
+          <List>
+            <h2>Menu</h2>
+            <div className="offcanvas_lists">
+            <ListItem onClick={toggleDrawer(false)}>Home</ListItem>
+            <ListItem onClick={toggleServicesDropdown} className="off_service">
+              <p>Our Service</p>
+              <LiaAngleDownSolid />
+            </ListItem>
+            {showServicesDropdown && (
+              <div className="Off_service_container">
+                <ListItem className="Off_services">
+                  <h3>Virtual construction</h3>
+                  <FaAngleRight />
+                </ListItem>
+                <ListItem className="Off_services">
+                  <h3>Structural engineering service</h3>
+                  <FaAngleRight />
+                </ListItem>
+                <ListItem className="Off_services">
+                  <h3>MEP engineering service</h3>
+                  <FaAngleRight />
+                </ListItem>
+                <ListItem className="Off_services">
+                  <h3>Support service</h3>
+                  <FaAngleRight />
+                </ListItem>
+              </div>
+            )}
+            <ListItem onClick={toggleDrawer(false)}>About us</ListItem>
+            <ListItem onClick={toggleDrawer(false)}>Contact us</ListItem>
+            </div>
+          </List>
+        </div>
+      </Box>
+    )
+  
+
   return (
     <div>
       <header className="header">
@@ -26,16 +94,41 @@ export default function Home() {
         <div className="nav_sec">
           <nav className="nav_link">
             <p>Home</p>
-            <p>Our services</p>
+            <p onClick={() => setShowBox(!showBox)}>Our services</p>
             <p>About us</p>
             <p>Contact us</p>
           </nav>
           <button>get quote now</button>
         </div>
         <div className="toggle_icon">
-           <img src={menu} alt="" />
-        </div>
+        <img src={menu} alt="" onClick={toggleDrawer(true)} />
+      </div>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {drawerList}
+      </Drawer>
       </header>
+
+      {showBox && (
+        <div className="service_container">
+          <div className="services">
+            <h3>virtula construction</h3>
+            <FaAngleRight />
+          </div>
+          <div className="services">
+            <h3>structural engineering service</h3>
+            <FaAngleRight />
+          </div>
+          <div className="services">
+            <h3>MEP engineering service</h3>
+            <FaAngleRight />
+          </div>
+          <div className="services">
+            <h3>support service</h3>
+            <FaAngleRight />
+          </div>
+        </div>
+      )}
+
       <div className="banner">
         <img src={banner} className="banner_img" alt="" />
         <img src={landing} className="res_banner_img" alt="" />
@@ -109,7 +202,6 @@ export default function Home() {
             <div>reliability</div>
             <div>quality</div>
           </div>
-         
         </div>
       </div>
 
@@ -202,16 +294,15 @@ export default function Home() {
                 <h3>raju ram</h3>
                 <p>CEO, Raju builders</p>
               </div>
-             <div className="card-body">
-              <p>
-                Curabitur molestie sit amet urna at euismod. In non vulputate
-                urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
-                Curabitur lorem lacus, placerat ut fermentum sit amet, egestas
-                sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
-                dapibus ac.
-              </p>
-             </div>
-            
+              <div className="card-body">
+                <p>
+                  Curabitur molestie sit amet urna at euismod. In non vulputate
+                  urna. Nam faucibus est eu lacus ornare, ut cursus massa
+                  semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
+                  egestas sit amet metus. Aenean varius vehicula enim, ac
+                  pulvinar nulla dapibus ac.
+                </p>
+              </div>
             </div>
             <div className="card">
               <div className="clients_grid">
@@ -220,15 +311,14 @@ export default function Home() {
                 <p>Member, NRT Apartments</p>
               </div>
               <div className="card-body">
-              <p>
-                Curabitur molestie sit amet urna at euismod. In non vulputate
-                urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
-                Curabitur lorem lacus, placerat ut fermentum sit amet, egestas
-                sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
-                dapibus ac.
-              </p>
+                <p>
+                  Curabitur molestie sit amet urna at euismod. In non vulputate
+                  urna. Nam faucibus est eu lacus ornare, ut cursus massa
+                  semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
+                  egestas sit amet metus. Aenean varius vehicula enim, ac
+                  pulvinar nulla dapibus ac.
+                </p>
               </div>
-            
             </div>
             <div className="card">
               <div className="clients_grid">
@@ -236,14 +326,15 @@ export default function Home() {
                 <h3>Abdul rahman</h3>
                 <p>MD, Abdhul real Estates</p>
               </div>
-              <div className="card-body"><p>
-                Curabitur molestie sit amet urna at euismod. In non vulputate
-                urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
-                Curabitur lorem lacus, placerat ut fermentum sit amet, egestas
-                sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
-                dapibus ac.
-              </p></div>
-              
+              <div className="card-body">
+                <p>
+                  Curabitur molestie sit amet urna at euismod. In non vulputate
+                  urna. Nam faucibus est eu lacus ornare, ut cursus massa
+                  semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
+                  egestas sit amet metus. Aenean varius vehicula enim, ac
+                  pulvinar nulla dapibus ac.
+                </p>
+              </div>
             </div>
             <div className="card">
               <div className="clients_grid">
@@ -252,15 +343,14 @@ export default function Home() {
                 <p>Founder PKG Hospital</p>
               </div>
               <div className="card-body">
-              <p>
-                Curabitur molestie sit amet urna at euismod. In non vulputate
-                urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
-                Curabitur lorem lacus, placerat ut fermentum sit amet, egestas
-                sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
-                dapibus ac.
-              </p>
+                <p>
+                  Curabitur molestie sit amet urna at euismod. In non vulputate
+                  urna. Nam faucibus est eu lacus ornare, ut cursus massa
+                  semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
+                  egestas sit amet metus. Aenean varius vehicula enim, ac
+                  pulvinar nulla dapibus ac.
+                </p>
               </div>
-             
             </div>
           </div>
         </div>
@@ -302,25 +392,23 @@ export default function Home() {
               <p>*Terms and Condition</p>
               <p>*Privacy policy</p>
               <div className="powered_container">
-                <p style={{fontSize:"8px"}}>Powered by</p>
+                <p style={{ fontSize: "8px" }}>Powered by</p>
                 <img src={poweredBy} alt="" />
               </div>
             </div>
           </div>
           <div className="res_term_details">
             <div className="responsive_terms">
-            <div className="terms">
-              <p>*Terms and Condition</p>
-              <p>*Privacy policy</p>
-            
-              
-            </div>
-            <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
-            </div>
-              <div className="powered_container">
-                <p style={{fontSize:"8px"}}>Powered by</p>
-                <img src={poweredBy} alt="" />
+              <div className="terms">
+                <p>*Terms and Condition</p>
+                <p>*Privacy policy</p>
               </div>
+              <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
+            </div>
+            <div className="powered_container">
+              <p style={{ fontSize: "8px" }}>Powered by</p>
+              <img src={poweredBy} alt="" />
+            </div>
           </div>
         </div>
       </footer>
