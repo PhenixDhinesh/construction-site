@@ -13,7 +13,8 @@ import client3 from "../../assets/client3.svg";
 import client4 from "../../assets/client4.svg";
 import whiteLogo from "../../assets/whiteLogo.svg";
 import poweredBy from "../../assets/poweredBy.svg";
-
+import menu from '../../assets/menu.svg'
+import banner from "../../assets/banner.svg"
 export default function Home() {
   return (
     <div>
@@ -30,8 +31,12 @@ export default function Home() {
           </nav>
           <button>get quote now</button>
         </div>
+        <div className="toggle_icon">
+           <img src={menu} alt="" />
+        </div>
       </header>
       <div className="banner">
+        <img src={banner} className="banner_img" alt="" />
         <div className="content">
           <div className="content_text">
             <h3>
@@ -45,6 +50,7 @@ export default function Home() {
               lobortis.
             </p>
           </div>
+
           <button>get quote now</button>
         </div>
       </div>

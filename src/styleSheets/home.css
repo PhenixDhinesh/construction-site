@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.toggle_icon{
+  width:28px;
+  height:28px;
+  display: none;
+}
 .nav_sec {
   display: flex;
   gap: 3rem;
@@ -25,12 +30,17 @@ button {
   background-color: var(--main-color);
 }
 .banner {
-  height: 578px;
-  background-image: url("../assets/banner.svg");
+  position: relative;
+
+}
+.banner_img{
+width:100%;
+position: absolute;
 }
 .content {
   padding: 7rem 50px;
   display: flex;
+  position: absolute;
   flex-direction: column;
   gap: 3rem;
   align-items: flex-start;
@@ -52,9 +62,10 @@ button {
 }
 .achivement_container{
   padding: 10rem 50px ;
+  margin-top:40rem;
+  height:178px;
   display: flex;
   justify-content: space-between;
-  height:178px;
   align-items: center;
 }
 .achivement_container > .text{
@@ -421,4 +432,13 @@ button {
 }
 .powered_container>img{
   max-width:100%;
+}
+@media (max-width: 767px){
+  .toggle_icon{
+    display: initial;
+  }
+  .nav_sec{
+    display: none;
+  }
+ 
 }
