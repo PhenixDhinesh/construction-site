@@ -15,6 +15,7 @@ import whiteLogo from "../../assets/whiteLogo.svg";
 import poweredBy from "../../assets/poweredBy.svg";
 import menu from '../../assets/menu.svg'
 import banner from "../../assets/banner.svg"
+import landing from "../../assets/res_banner.svg"
 export default function Home() {
   return (
     <div>
@@ -37,6 +38,8 @@ export default function Home() {
       </header>
       <div className="banner">
         <img src={banner} className="banner_img" alt="" />
+        <img src={landing} className="res_banner_img" alt="" />
+
         <div className="content">
           <div className="content_text">
             <h3>
@@ -192,12 +195,13 @@ export default function Home() {
         <div className="client_words">
           <h3>Few words from Our Clints</h3>
           <div className="client_container">
-            <div className="clients">
+            <div className="card">
               <div className="clients_grid">
                 <img src={client1} alt="" />
                 <h3>raju ram</h3>
                 <p>CEO, Raju builders</p>
               </div>
+             <div className="card-body">
               <p>
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
@@ -205,13 +209,16 @@ export default function Home() {
                 sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
                 dapibus ac.
               </p>
+             </div>
+            
             </div>
-            <div className="clients">
+            <div className="card">
               <div className="clients_grid">
                 <img src={client2} alt="" />
                 <h3>Nadarajan</h3>
                 <p>Member, NRT Apartments</p>
               </div>
+              <div className="card-body">
               <p>
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
@@ -219,27 +226,31 @@ export default function Home() {
                 sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
                 dapibus ac.
               </p>
+              </div>
+            
             </div>
-            <div className="clients">
+            <div className="card">
               <div className="clients_grid">
                 <img src={client3} alt="" />
                 <h3>Abdul rahman</h3>
                 <p>MD, Abdhul real Estates</p>
               </div>
-              <p>
+              <div className="card-body"><p>
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
                 Curabitur lorem lacus, placerat ut fermentum sit amet, egestas
                 sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
                 dapibus ac.
-              </p>
+              </p></div>
+              
             </div>
-            <div className="clients">
+            <div className="card">
               <div className="clients_grid">
                 <img src={client4} alt="" />
                 <h3>Dr.P Kumar</h3>
                 <p>Founder PKG Hospital</p>
               </div>
+              <div className="card-body">
               <p>
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
@@ -247,6 +258,8 @@ export default function Home() {
                 sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla
                 dapibus ac.
               </p>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -292,6 +305,21 @@ export default function Home() {
                 <img src={poweredBy} alt="" />
               </div>
             </div>
+          </div>
+          <div className="res_term_details">
+            <div className="responsive_terms">
+            <div className="terms">
+              <p>*Terms and Condition</p>
+              <p>*Privacy policy</p>
+            
+              
+            </div>
+            <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
+            </div>
+              <div className="powered_container">
+                <p style={{fontSize:"8px"}}>Powered by</p>
+                <img src={poweredBy} alt="" />
+              </div>
           </div>
         </div>
       </footer>
