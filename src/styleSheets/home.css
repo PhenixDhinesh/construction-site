@@ -174,7 +174,7 @@ button {
 
 .achivement_container {
   padding: 10rem 50px;
-  margin-top: 28rem;
+  margin-top: 32rem;
   height: 178px;
   display: flex;
   justify-content: space-between;
@@ -275,6 +275,7 @@ button {
   align-items: center;
   gap: 4rem;
 
+
 }
 .core_values_container > h3 {
   font-size: 36px;
@@ -292,8 +293,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    overflow: hidden;
-
   }
   .core_values_container > h3 {
     font-size: 28px !important;
@@ -311,6 +310,7 @@ button {
   white-space: nowrap; 
   width:100%;
   padding: 10px; 
+  overflow-x:hidden ;
 }
 .animation_scroll {
   display:flex; /* Enables flex layout */

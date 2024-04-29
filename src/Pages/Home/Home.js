@@ -215,7 +215,7 @@ export default function Home() {
             </p>
           </div>
           <div className="virtual_construction_cards">
-            <div class="card" style={{ width: "18rem" }}>
+            <div class="card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -228,7 +228,7 @@ export default function Home() {
                 <button>read more...</button>
               </div>
             </div>
-            <div class="card" style={{ width: "18rem" }}>
+            <div class="card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -241,7 +241,7 @@ export default function Home() {
                 <button>read more...</button>
               </div>
             </div>
-            <div class="card" style={{ width: "18rem" }}>
+            <div class="card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -254,7 +254,7 @@ export default function Home() {
                 <button>read more...</button>
               </div>
             </div>
-            <div class="card" style={{ width: "18rem" }}>
+            <div class="card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
