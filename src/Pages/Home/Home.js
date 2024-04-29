@@ -150,14 +150,14 @@ export default function Home() {
           <button>get quote now</button>
         </div>
       </div>
-      <div className="achivement_container">
+      <div className="achivement_container" >
         <div className="text">
           <h3>
             Lorem ipsum is <br />
             simply dummy text
           </h3>
           <p>
-            Integer in est elit. Mauris placerat blandit massa quis <br />{" "}
+            Integer in est elit. Mauris placerat blandit massa quis
             aliquam. Donec efficitur risus
           </p>
         </div>
@@ -210,7 +210,7 @@ export default function Home() {
           <div className="virtual_construction_title">
             <h3>Lorem ipsum is simply dummy text</h3>
             <p>
-              Integer in est elit. Mauris placerat blandit massa quis <br />{" "}
+              Integer in est elit. Mauris placerat blandit massa quis 
               aliquam. Donec efficitur risus
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function Home() {
         <div className="virtual_construction_title">
           <h3>Let us help you on build</h3>
           <p>
-            Integer in est elit. Mauris placerat blandit massa quis <br />{" "}
+            Integer in est elit. Mauris placerat blandit massa quis
             aliquam. Donec efficitur risus
           </p>
         </div>
@@ -286,7 +286,7 @@ export default function Home() {
 
       <div className="client_words_container">
         <div className="client_words">
-          <h3>Few words from Our Clints</h3>
+          <h3>Few words from Our Clients</h3>
           <div className="client_container">
             <div className="card">
               <div className="clients_grid">
