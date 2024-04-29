@@ -284,9 +284,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="client_words_container">
+       
+
         <div className="client_words">
-          <h3>Few words from Our Clients</h3>
+          <div className="client_words_container" >
+           <h3 style={{textAlign:"center"}}>Few words from Our Clients</h3>
+          </div>
+
           <div className="client_container">
             <div className="card">
               <div className="clients_grid">
@@ -295,7 +299,7 @@ export default function Home() {
                 <p>CEO, Raju builders</p>
               </div>
               <div className="card-body">
-                <p>
+                <p className="about_client">
                   Curabitur molestie sit amet urna at euismod. In non vulputate
                   urna. Nam faucibus est eu lacus ornare, ut cursus massa
                   semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
@@ -311,7 +315,7 @@ export default function Home() {
                 <p>Member, NRT Apartments</p>
               </div>
               <div className="card-body">
-                <p>
+                <p className="about_client">
                   Curabitur molestie sit amet urna at euismod. In non vulputate
                   urna. Nam faucibus est eu lacus ornare, ut cursus massa
                   semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
@@ -327,7 +331,7 @@ export default function Home() {
                 <p>MD, Abdhul real Estates</p>
               </div>
               <div className="card-body">
-                <p>
+                <p className="about_client">
                   Curabitur molestie sit amet urna at euismod. In non vulputate
                   urna. Nam faucibus est eu lacus ornare, ut cursus massa
                   semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
@@ -343,7 +347,7 @@ export default function Home() {
                 <p>Founder PKG Hospital</p>
               </div>
               <div className="card-body">
-                <p>
+                <p className="about_client">
                   Curabitur molestie sit amet urna at euismod. In non vulputate
                   urna. Nam faucibus est eu lacus ornare, ut cursus massa
                   semper. Curabitur lorem lacus, placerat ut fermentum sit amet,
@@ -354,7 +358,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+
+        
+
 
       <footer className="footer">
         <div className="footer_container">

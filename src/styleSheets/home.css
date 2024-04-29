@@ -274,7 +274,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-
+overflow-x: hidden;
 
 }
 .core_values_container > h3 {
@@ -286,6 +286,7 @@ button {
 }
 
 @media (max-width: 560px) {
+  
   .core_values_container {
     align-items: flex-start;
     height: 230px;
@@ -310,7 +311,6 @@ button {
   white-space: nowrap; 
   width:100%;
   padding: 10px; 
-  overflow-x:hidden ;
 }
 .animation_scroll {
   display:flex; /* Enables flex layout */
@@ -370,9 +370,7 @@ button {
     text-align: left !important;
     font-size: 12px !important;
   }
-  .virtual_construction_cards {
-    overflow-x: auto;
-  }
+
   .virtual_construction_title > h3{
     font-size: 28px !important;
   }
@@ -384,12 +382,14 @@ button {
   }
   .virtual_construction_cards {
     height: 400px;
+    overflow-x: auto;
     display: flex;
     margin-top: 3rem !important;
     gap: 2rem !important;
   }
-  .card-body{
-    width: 250px !important;
+
+  .card-body > p{
+    width:250px !important;
   }
 }
 
@@ -415,8 +415,8 @@ button {
 .virtual_construction_cards {
   height: 483px;
   display: flex;
+  gap:2.5rem;
   margin-top: 5rem;
-  gap: 3rem;
 }
 .virtual_construction_cards > .cards > img {
   height: 219px;
@@ -426,7 +426,7 @@ button {
   width: 300px;
 }
 .card-body {
-  width: 300px;
+  width: 300px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -441,9 +441,11 @@ button {
   color: #714e4e;
   text-transform: uppercase;
 }
-.card-body > p {
+.card-body > .card-text {
   text-align: justify;
   font-size: 14px;
+  width: 300px;
+
   line-height: 18.75px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -508,48 +510,36 @@ button {
   max-width: 100%;
   border-radius: 10px;
 }
-.client_words_container {
-  height: 667px;
-}
+
 .client_words {
-  padding: 10rem 50px;
   display: flex;
   flex-direction: column;
+  gap:4rem;
+  padding: 5rem 50px;
 }
-.client_words > h3 {
-  text-align: center;
-  font-size: 36px;
+
+.client_words_container > h3 {
+  text-align: center !important;
+  font-size: 36px ;
   line-height: 43.57px;
   font-weight: bold;
   font-family: "Inter", sans-serif;
 }
 .client_container {
   display: flex;
-  gap: 2.8rem;
-  margin-top: 4rem;
-}
-.client_container > .card {
-  width: 297px;
-  height: 214px;
+  gap: 2.2rem;
 }
 
 
-@media (min-width: 320px){
+@media (max-width: 768px){
   .client_container {
     overflow-x: auto !important;
-    gap: 5rem !important;
+    gap: 2rem !important;
 
   }
-  .client_words {
-    padding: 5rem 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  .client_words_container {
-    height: 500px;
-    width: 100% !important;
-  }
-  .client_words > h3{
+
+
+  .client_words_container > h3{
     text-align: left !important;
     font-size: 28px;
   }
@@ -559,24 +549,20 @@ button {
   .clients_grid > h3{
     font-size: 16px !important;
   }
-  .card-body > p{
-    font-size:12px;
-    width:230px;
-
-  }
-  .client_container > .card{
-    width:230px;
-  }
-  .client_container {
-    gap: 2rem !important;
-    margin-top: 2rem;
-  }
+ .about_client{
+  font-size: 12px !important;
+ }
+.client_words{
+  padding: 4rem 30px;
+  gap:2rem;
+}
+  
   .footer_container {
     padding: 5rem 30px 0 !important;
   }
 }
-.clients > p {
-  text-align: justify;
+.about_client {
+  text-align: justify !important;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 18.75px;
