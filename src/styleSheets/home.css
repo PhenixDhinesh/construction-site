@@ -293,6 +293,8 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
+
   }
   .core_values_container > h3 {
     font-size: 28px !important;
@@ -304,9 +306,7 @@ button {
     gap: 3rem !important;
 
   }
-  .core_values {
-    overflow: hidden;
-  }
+
 }
 .core_values {
   white-space: nowrap; 
@@ -417,17 +417,17 @@ button {
   height: 483px;
   display: flex;
   margin-top: 5rem;
-  gap: 6rem;
+  gap: 3rem;
 }
 .virtual_construction_cards > .cards > img {
   height: 219px;
   border-radius: 8px;
 }
 .card-img-top {
-  width: 328px;
+  width: 300px;
 }
 .card-body {
-  width: 328px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -524,7 +524,7 @@ button {
 }
 .client_container {
   display: flex;
-  gap: 5rem;
+  gap: 2.8rem;
   margin-top: 4rem;
 }
 .client_container > .card {
