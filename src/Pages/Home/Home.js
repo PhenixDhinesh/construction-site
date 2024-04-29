@@ -140,9 +140,9 @@ export default function Home() {
               simply dummy text
             </h3>
             <p>
-              Integer in est elit. Mauris placerat blandit massa quis <br />{" "}
-              aliquam. Donec efficitur risus id sapien lobortis, vel <br />{" "}
-              tempor ligula mollis. Aenean vitae nibh nec lacus <br /> molestie
+              Integer in est elit. Mauris placerat blandit massa quis 
+              aliquam. Donec efficitur risus id sapien lobortis, vel
+              tempor ligula mollis. Aenean vitae nibh nec lacus  molestie
               lobortis.
             </p>
           </div>
@@ -380,7 +380,7 @@ export default function Home() {
             <div className="contact-Container">
               <p>+91 983432423</p>
               <p>Contact@gmail.com</p>
-              <p style={{ width: "349px" }}>
+              <p className="address">
                 SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
               </p>
             </div>
@@ -406,7 +406,7 @@ export default function Home() {
               <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
             </div>
             <div className="powered_container">
-              <p style={{ fontSize: "8px" }}>Powered by</p>
+              <p style={{ fontSize: "5px" }}>Powered by</p>
               <img src={poweredBy} alt="" />
             </div>
           </div>
