@@ -112,8 +112,30 @@ export default function Header() {
       )}
 
       <div className="banner">
-        <img src={banner} className="banner_img" alt="" />
-        <img src={landing} className="res_banner_img" alt="" />
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
+
+        <div className="content">
+          <div className="content_text">
+            <h3>
+              Lorem ipsum is <br />
+              simply dummy text
+            </h3>
+            <p>
+              Integer in est elit. Mauris placerat blandit massa quis 
+              aliquam. Donec efficitur risus id sapien lobortis, vel
+              tempor ligula mollis. Aenean vitae nibh nec lacus  molestie
+              lobortis.
+            </p>
+          </div>
+
+          <button>get quote now</button>
+        </div>
+      </div>
+
+      <div className="res_banner">
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
         <div className="content">
           <div className="content_text">

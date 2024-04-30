@@ -1,5 +1,4 @@
 .about_our_service{
-    margin-top:40rem ;
     padding:7rem 50px;
     display:flex;
     align-items: center;
@@ -128,7 +127,6 @@ color:#000000;
         flex-direction: column;
     }
     .about_our_service{
-        margin-top:34rem ;
         padding:5rem 30px;
         display: block !important;
    
