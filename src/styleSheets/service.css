@@ -114,19 +114,20 @@ color:#000000;
 }
 @media (max-width: 560px){
     .about_offer{
-        width:250px;
+        width:80vw;
         font-size: 12px;
     }
     .about_Offers{
+        width:100%;
         margin:10px 1rem 1rem 0;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap:1rem;
         flex-direction: column;
     }
     .about_our_service{
-        margin-top:27rem ;
+        margin-top:33rem ;
         padding:5rem 30px;
         display: block !important;
    
@@ -164,15 +165,17 @@ color:#000000;
 display: none;
 }
 #res_offer{
+    width:100%;
     display:initial;
 }
 .offers_image{
-    width:250px;
+   width:85vw;
+
     height:186px;
 }
 .offers_name{
     padding:0;
-    width:250px;
+    width:80vw;
     gap:1px !important;
     align-items: center !important;
  
