@@ -9,6 +9,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { LiaAngleDownSolid } from "react-icons/lia";
 import logo from "../assets/Logo.svg";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -32,7 +33,7 @@ export default function Header() {
             <List>
               <h2>Menu</h2>
               <div className="offcanvas_lists">
-              <ListItem onClick={toggleDrawer(false)}>Home</ListItem>
+              <Link to="/" style={{textDecoration:"none",color:"#000"}}><ListItem onClick={toggleDrawer(false)}>Home</ListItem></Link>
               <ListItem onClick={toggleServicesDropdown} className="off_service">
                 <p>Our Service</p>
                 <LiaAngleDownSolid />
@@ -40,25 +41,25 @@ export default function Header() {
               {showServicesDropdown && (
                 <div className="Off_service_container">
                   <ListItem className="Off_services">
-                    <h3>Virtual construction</h3>
+                  <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontSize:"16px",fontWeight:"400"}}>Virtual construction</h3></Link>
                     <FaAngleRight />
                   </ListItem>
                   <ListItem className="Off_services">
-                    <h3>Structural engineering service</h3>
+                  <Link to="/service" style={{textDecoration:"none",color:"#000"}}><h3 style={{fontSize:"16px",fontWeight:"400"}}>Structural engineering service</h3></Link>
                     <FaAngleRight />
                   </ListItem>
                   <ListItem className="Off_services">
-                    <h3>MEP engineering service</h3>
+                  <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontSize:"16px",fontWeight:"400"}}>MEP engineering service</h3></Link>
                     <FaAngleRight />
                   </ListItem>
                   <ListItem className="Off_services">
-                    <h3>Support service</h3>
+                  <Link to="/service" style={{textDecoration:"none",color:"#000"}}><h3 style={{fontSize:"16px",fontWeight:"400"}}>Support service</h3></Link>
                     <FaAngleRight />
                   </ListItem>
                 </div>
               )}
-              <ListItem onClick={toggleDrawer(false)}>About us</ListItem>
-              <ListItem onClick={toggleDrawer(false)}>Contact us</ListItem>
+              <Link to="/about" style={{textDecoration:"none",color:"#000"}}> <ListItem onClick={toggleDrawer(false)}>About us</ListItem></Link>
+              <Link to="/contact" style={{textDecoration:"none",color:"#000"}}><ListItem onClick={toggleDrawer(false)}>Contact us</ListItem></Link>
               </div>
             </List>
           </div>
@@ -73,10 +74,10 @@ export default function Header() {
         </div>
         <div className="nav_sec">
           <nav className="nav_link">
-            <p>Home</p>
-            <p onClick={() => setShowBox(!showBox)}>Our services</p>
-            <p>About us</p>
-            <p>Contact us</p>
+            <Link to="/" style={{textDecoration:"none",color:"#000"}}><p className='links'>Home</p></Link>
+          <p onClick={() => setShowBox(!showBox)}>Our services</p>
+          <Link to="/about" style={{textDecoration:"none",color:"#000"}}> <p>About us</p></Link>
+          <Link to="/contact" style={{textDecoration:"none",color:"#000"}}> <p>Contact us</p></Link>
           </nav>
           <button>get quote now</button>
         </div>
@@ -90,20 +91,21 @@ export default function Header() {
 
       {showBox && (
         <div className="service_container">
-          <div className="services">
-            <h3>virtula construction</h3>
+             <div className="services">
+           <Link to="/service" style={{textDecoration:"none",color:"#000"}}>
+            <h3 style={{fontWeight:"400",fontSize:"16px"}}>virtula construction</h3></Link>
             <FaAngleRight />
           </div>
           <div className="services">
-            <h3>structural engineering service</h3>
+          <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontWeight:"400",fontSize:"16px"}}>structural engineering service</h3></Link>
             <FaAngleRight />
           </div>
           <div className="services">
-            <h3>MEP engineering service</h3>
+          <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontWeight:"400",fontSize:"16px"}}>MEP engineering service</h3></Link>
             <FaAngleRight />
           </div>
           <div className="services">
-            <h3>support service</h3>
+          <Link to="/service" style={{textDecoration:"none",color:"#000"}}><h3 style={{fontWeight:"400",fontSize:"16px"}}>support service</h3></Link>
             <FaAngleRight />
           </div>
         </div>

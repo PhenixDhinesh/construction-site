@@ -41,7 +41,7 @@ background-color: #E7E2E2;
     flex-direction: column;
     gap:4rem;
     background-color: #F7F7F7;
-    height:1003px;
+    height:1005px;
 }
 .what_offer{
     display: flex;
@@ -112,6 +112,7 @@ color:#000000;
 
 
 }
+
 @media (max-width: 560px){
     .about_offer{
         width:80vw;
@@ -127,7 +128,7 @@ color:#000000;
         flex-direction: column;
     }
     .about_our_service{
-        margin-top:33rem ;
+        margin-top:34rem ;
         padding:5rem 30px;
         display: block !important;
    
@@ -158,7 +159,7 @@ color:#000000;
 .offers_container_box{
     align-items: flex-start;
     padding:3rem 30px 0;
-    height:800px;
+    height:auto;
     gap:0rem;
 }
 .offers_container{

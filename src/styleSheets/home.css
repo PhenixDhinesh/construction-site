@@ -10,6 +10,7 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+
 .header {
   padding: 20px 50px;
   display: flex;
@@ -31,6 +32,7 @@ body{
   justify-content: flex-start;
   gap: 2rem;
 }
+
 .nav_sec > .nav_link  :hover{
 color:#714e4e;
 cursor: pointer;
