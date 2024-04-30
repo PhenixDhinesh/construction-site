@@ -5,6 +5,10 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 
 import "../styleSheets/service.css";
 function Services() {
+  const [showTab, setShowtab] = useState(1);
+  const handleClick = (e) => {
+    setShowtab(e);
+  };
   const [showDrop, setDrop] = useState(false);
   return (
     <div>
@@ -48,10 +52,10 @@ function Services() {
               <h3> BIM - ARCHITECTURAL</h3>
               <LiaAngleDownSolid
                 className="icon"
-                onClick={() => setDrop(!showDrop)}
+                onClick={() => handleClick(1)}
               />
             </div>
-            {showDrop && (
+            {showTab === 1 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
@@ -66,21 +70,65 @@ function Services() {
 
             <div className="offers_name">
               <h3> BIM - STRUCTURAL</h3>
-              <LiaAngleDownSolid className="icon" />
+
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(2)}
+              />
             </div>
+            {showTab === 2 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                </div>
+              </div>
+            )}
             <div className="offers_name">
               <h3> BIM - MEP</h3>
-              <LiaAngleDownSolid className="icon" />
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(3)}
+              />
             </div>
+            {showTab === 3 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                </div>
+              </div>
+            )}
             <div className="offers_name">
               <h3> Infrastructure Model</h3>
-              <LiaAngleDownSolid className="icon" />
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(4)}
+              />
             </div>
+
+            {showTab === 4 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
-          {showDrop && 
-          <div className="offers_image"></div>
-          
-          }
+          {showTab && <div className="offers_image"></div>}
         </div>
         <div className="offers_container" id="res_offer">
           <div className="offers">
@@ -88,10 +136,10 @@ function Services() {
               <h3> BIM - ARCHITECTURAL</h3>
               <LiaAngleDownSolid
                 className="icon"
-                onClick={() => setDrop(!showDrop)}
+                onClick={() => handleClick(1)}
               />
             </div>
-            {showDrop && (
+            {showTab === 1 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
@@ -107,16 +155,67 @@ function Services() {
 
             <div className="offers_name">
               <h3> BIM - STRUCTURAL</h3>
-              <LiaAngleDownSolid className="icon" />
+
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(2)}
+              />
             </div>
+
+            {showTab === 2 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                  <div className="offers_image"></div>
+                </div>
+              </div>
+            )}
             <div className="offers_name">
               <h3> BIM - MEP</h3>
-              <LiaAngleDownSolid className="icon" />
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(3)}
+              />
             </div>
+            {showTab === 3 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                  <div className="offers_image"></div>
+                </div>
+              </div>
+            )}
             <div className="offers_name">
               <h3> Infrastructure Model</h3>
-              <LiaAngleDownSolid className="icon" />
+              <LiaAngleDownSolid
+                className="icon"
+                onClick={() => handleClick(4)}
+              />
             </div>
+
+            {showTab === 4 && (
+              <div className="about_offers_name">
+                <div className="about_Offers">
+                  <p className="about_offer">
+                    Curabitur molestie sit amet urna at euismod. In non
+                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
+                    massa semper. Curabitur lorem lacus, placerat ut fermentum
+                    sit amet, egestas sit amet metus.
+                  </p>
+                  <div className="offers_image"></div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

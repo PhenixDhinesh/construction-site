@@ -346,13 +346,14 @@ button {
 .virtual_construction_contianer {
   /* margin-top:5rem; */
   height: 1022px;
+  width:100vw;
   background-color: #f7f7f7;
   padding: 5rem 0px;
 }
 
 .virtual_construction_box {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+  flex-direction: column; 
   padding: 20px 50px;
 }
 @media (max-width: 767px) {
@@ -387,7 +388,6 @@ button {
   .virtual_construction_cards {
     height: 400px;
     overflow-x: auto;
-    display: flex;
     margin-top: 3rem !important;
     gap: 2rem !important;
   }
@@ -417,9 +417,9 @@ button {
   color: #000000;
 }
 .virtual_construction_cards {
-  height: 483px;
-  display: flex;
-  gap:2.2rem;
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  gap: 2.2rem;
   margin-top: 5rem;
 }
 .virtual_construction_cards > .cards > img {
@@ -529,7 +529,8 @@ button {
   font-family: "Inter", sans-serif;
 }
 .client_container {
-  display: flex;
+  display: grid;
+  grid-template-columns:auto auto auto auto;
   gap: 2.2rem;
 }
 

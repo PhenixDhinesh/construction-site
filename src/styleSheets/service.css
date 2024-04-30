@@ -186,3 +186,10 @@ display: none;
     font-size: 14px;
 }
 }
+.active{
+    display: initial;
+}
+.tab-panefade{
+    display: none;
+
+}
