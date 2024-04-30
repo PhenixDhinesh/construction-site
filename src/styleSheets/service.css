@@ -1,0 +1,186 @@
+.about_our_service{
+    margin-top:40rem ;
+    padding:7rem 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+.about_our_service_content{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:3rem;
+    flex:1;
+
+}
+.about_our_service_content>h3, .what_offer > h3{
+    font-size:36px;
+    font-family: 'Inter', sans serif;
+    line-height: 44px;
+    color:#000000;
+    font-weight: 600;
+}
+.about_our_service_content >p{
+font-weight:400;
+font-size:20px;
+line-height: 24px;
+text-align: justify;
+color: #000000;
+}
+.about_our_service_image{
+height:300px;
+flex:1;
+border-radius:10px ;
+background-color: #E7E2E2;
+}
+.offers_container_box{
+    padding:9rem 6rem 0;
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:4rem;
+    background-color: #F7F7F7;
+    height:1003px;
+}
+.what_offer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.what_offer>p{
+    text-align: center;
+    /* padding-left: 0.1rem; */
+    font-size: 20px;
+}
+.what_offer>.divider{
+    width:166px;
+    border:2px solid #714E4E;
+}
+.offers_container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offers{
+   
+    
+    margin:3rem 0;
+}
+.offers_image{
+    width:520px;
+    height:306px;
+    background: #E7E2E2;
+    border-radius:10px ;
+}
+.offers_name{
+   padding:10px 0px;
+   width:600px;
+   display: flex;
+   align-items: center;
+   text-align: justify;
+   justify-content: space-between;
+}
+.about_Offers{
+    display: flex; 
+    width:100% !important;
+    justify-content: space-between;
+    gap:3rem;
+}
+#res_offer{
+    display: none;
+}
+.about_offer{
+    margin:1rem 0;
+    width:584px;
+    display: flex;
+    text-align: justify;
+}
+.offers_name>.icon{
+font-size:28px ;
+color:#000000;
+}
+.offers_name>h3{
+    font-size: 28px;
+    font-family: 'Roboto',sans-serif;
+    font-weight:600;
+    line-height:33px;
+
+
+}
+@media (max-width: 560px){
+    .about_offer{
+        width:250px;
+        font-size: 12px;
+    }
+    .about_Offers{
+        margin:10px 1rem 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+        flex-direction: column;
+    }
+    .about_our_service{
+        margin-top:27rem ;
+        padding:5rem 30px;
+        display: block !important;
+   
+    }
+    .about_our_service_content{
+        gap:1rem;
+        margin-bottom:2rem;
+    }
+   .about_our_service_content>h3, .what_offer > h3{
+    font-size:28px;
+   }
+.about_our_service_content >p{
+    font-size: 16px;
+}
+.what_offer{
+    align-items: flex-start;
+    gap:16px;
+}
+.what_offer>p{
+    text-align: justify;
+    padding: 0;
+    font-size: 12px;
+
+}
+.what_offer>.divider{
+    width:92px;
+}
+.offers_container_box{
+    align-items: flex-start;
+    padding:3rem 30px 0;
+    height:800px;
+    gap:0rem;
+}
+.offers_container{
+display: none;
+}
+#res_offer{
+    display:initial;
+}
+.offers_image{
+    width:250px;
+    height:186px;
+}
+.offers_name{
+    padding:0;
+    width:250px;
+    gap:1px !important;
+    align-items: center !important;
+ 
+ }
+.offers_name>h3{
+    font-size: 16px !important;
+}
+.offers_name>.icon{
+    font-size: 14px;
+}
+}

@@ -163,7 +163,7 @@ button {
 
   }
   .content {
-    padding: 7rem 30px;
+    padding: 3rem  0  30px 30px;
   }
   button {
     width: 148px;
@@ -415,7 +415,7 @@ overflow-x: hidden;
 .virtual_construction_cards {
   height: 483px;
   display: flex;
-  gap:4rem;
+  gap:2.2rem;
   margin-top: 5rem;
 }
 .virtual_construction_cards > .cards > img {
@@ -526,7 +526,7 @@ overflow-x: hidden;
 }
 .client_container {
   display: flex;
-  gap: 3.2rem;
+  gap: 2.2rem;
 }
 
 

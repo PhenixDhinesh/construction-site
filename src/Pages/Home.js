@@ -1,155 +1,24 @@
-import React, { useState } from "react";
-import "../../styleSheets/home.css";
-import logo from "../../assets/Logo.svg";
-import groups from "../../assets/groups.svg";
-import map from "../../assets/map.svg";
-import architect from "../../assets/architecture.svg";
-import engineer from "../../assets/engineering.svg";
-import site from "../../assets/site.svg";
-import ladder from "../../assets/ladder.svg";
-import client1 from "../../assets/client 1.svg";
-import client2 from "../../assets/client2.svg";
-import client3 from "../../assets/client3.svg";
-import client4 from "../../assets/client4.svg";
-import whiteLogo from "../../assets/whiteLogo.svg";
-import poweredBy from "../../assets/poweredBy.svg";
-import menu from "../../assets/menu.svg";
-import banner from "../../assets/banner.svg";
-import landing from "../../assets/res_banner.svg";
-import { FaAngleRight } from "react-icons/fa6";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import { LiaAngleDownSolid } from "react-icons/lia";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import React from "react";
+import "../styleSheets/home.css";
+import groups from "../assets/groups.svg";
+import map from "../assets/map.svg";
+import architect from "../assets/architecture.svg";
+import engineer from "../assets/engineering.svg";
+import site from "../assets/site.svg";
+import ladder from "../assets/ladder.svg";
+import client1 from "../assets/client 1.svg";
+import client2 from "../assets/client2.svg";
+import client3 from "../assets/client3.svg";
+import client4 from "../assets/client4.svg";
+import Header from "./Header";
+import Footer from "./Footer";
+
 export default function Home() {
-  const [showBox, setShowBox] = useState(false);
-  const [showOffBox, setShowOffBox] = useState(true);
-  const [open, setOpen] = useState(false);
-  const [showServicesDropdown, setShowServicesDropdown] = useState(false);
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-  };
-
-  const toggleServicesDropdown = (e) => {
-    // Prevent the default click behavior from closing the drawer
-    e.stopPropagation();
-    setShowServicesDropdown(!showServicesDropdown);
-  };
-
-
-    const drawerList = (
-      <Box sx={{ width: 300 }} role="presentation">
-        <div className="offcanvas_container">
-          <List>
-            <h2>Menu</h2>
-            <div className="offcanvas_lists">
-            <ListItem onClick={toggleDrawer(false)}>Home</ListItem>
-            <ListItem onClick={toggleServicesDropdown} className="off_service">
-              <p>Our Service</p>
-              <LiaAngleDownSolid />
-            </ListItem>
-            {showServicesDropdown && (
-              <div className="Off_service_container">
-                <ListItem className="Off_services">
-                  <h3>Virtual construction</h3>
-                  <FaAngleRight />
-                </ListItem>
-                <ListItem className="Off_services">
-                  <h3>Structural engineering service</h3>
-                  <FaAngleRight />
-                </ListItem>
-                <ListItem className="Off_services">
-                  <h3>MEP engineering service</h3>
-                  <FaAngleRight />
-                </ListItem>
-                <ListItem className="Off_services">
-                  <h3>Support service</h3>
-                  <FaAngleRight />
-                </ListItem>
-              </div>
-            )}
-            <ListItem onClick={toggleDrawer(false)}>About us</ListItem>
-            <ListItem onClick={toggleDrawer(false)}>Contact us</ListItem>
-            </div>
-          </List>
-        </div>
-      </Box>
-    )
-  
 
   return (
     <div>
-      <header className="header">
-        <div className="logo_sec">
-          <img src={logo} alt="" />
-        </div>
-        <div className="nav_sec">
-          <nav className="nav_link">
-            <p>Home</p>
-            <p onClick={() => setShowBox(!showBox)}>Our services</p>
-            <p>About us</p>
-            <p>Contact us</p>
-          </nav>
-          <button>get quote now</button>
-        </div>
-        <div className="toggle_icon">
-        <img src={menu} alt="" onClick={toggleDrawer(true)} />
-      </div>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {drawerList}
-      </Drawer>
-      </header>
-
-      {showBox && (
-        <div className="service_container">
-          <div className="services">
-            <h3>virtula construction</h3>
-            <FaAngleRight />
-          </div>
-          <div className="services">
-            <h3>structural engineering service</h3>
-            <FaAngleRight />
-          </div>
-          <div className="services">
-            <h3>MEP engineering service</h3>
-            <FaAngleRight />
-          </div>
-          <div className="services">
-            <h3>support service</h3>
-            <FaAngleRight />
-          </div>
-        </div>
-      )}
-
-      <div className="banner">
-        <img src={banner} className="banner_img" alt="" />
-        <img src={landing} className="res_banner_img" alt="" />
-
-        <div className="content">
-          <div className="content_text">
-            <h3>
-              Lorem ipsum is <br />
-              simply dummy text
-            </h3>
-            <p>
-              Integer in est elit. Mauris placerat blandit massa quis 
-              aliquam. Donec efficitur risus id sapien lobortis, vel
-              tempor ligula mollis. Aenean vitae nibh nec lacus  molestie
-              lobortis.
-            </p>
-          </div>
-
-          <button>get quote now</button>
-        </div>
-      </div>
+    <Header/>
       <div className="achivement_container" >
         <div className="text">
           <h3>
@@ -359,65 +228,9 @@ export default function Home() {
           </div>
         </div>
 
-        
+        <Footer/>
 
 
-      <footer className="footer">
-        <div className="footer_container">
-          <div className="footer_logo">
-            <div className="footer_logo_container">
-              <img src={whiteLogo} alt="" />
-            </div>
-            <p>
-              Integer in est elit. Mauris placerat blandit massa quis aliquam.
-              Donec efficitur risus{" "}
-            </p>
-          </div>
-          <div className="contact_detail_container">
-            <div className="nav-Container">
-              <p>Home</p>
-              <p>Our services</p>
-              <p>About us</p>
-              <p>Contact us</p>
-              <p>Get quote now</p>
-              <p>Back to top</p>
-            </div>
-
-            <div className="contact-Container">
-              <p>+91 983432423</p>
-              <p>Contact@gmail.com</p>
-              <p className="address">
-                SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
-              </p>
-            </div>
-          </div>
-          <hr />
-          <div className="term_details">
-            <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
-            <div className="terms">
-              <p>*Terms and Condition</p>
-              <p>*Privacy policy</p>
-              <div className="powered_container">
-                <p style={{ fontSize: "8px" }}>Powered by</p>
-                <img src={poweredBy} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="res_term_details">
-            <div className="responsive_terms">
-              <div className="terms">
-                <p>*Terms and Condition</p>
-                <p>*Privacy policy</p>
-              </div>
-              <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
-            </div>
-            <div className="powered_container">
-              <p style={{ fontSize: "5px" }}>Powered by</p>
-              <img src={poweredBy} alt="" />
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
