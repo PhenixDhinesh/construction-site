@@ -128,7 +128,7 @@ function Services() {
             )}
           </div>
           
-          {showTab && <div className="offers_image"></div>}
+          {showTab===0 ? '' : <div className="offers_image"></div>}
         </div>
         <div className="offers_container" id="res_offer">
           <div className="offers">

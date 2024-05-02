@@ -26,14 +26,14 @@ body{
   display: flex;
   gap: 3rem;
 }
-@media (max-width: 768px){
+@media (max-width: 900px){
 
 
 .toggle_icon {
   display: initial;
 }
 .nav_sec {
-  display: none;
+  display: none !important;
 }
 }
 
