@@ -1,7 +1,5 @@
 import React,{useState} from 'react'
 import menu from "../assets/menu.svg";
-import banner from "../assets/banner.svg";
-import landing from "../assets/res_banner.svg";
 import { FaAngleRight } from "react-icons/fa6";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -40,19 +38,19 @@ export default function Header() {
               </ListItem>
               {showServicesDropdown && (
                 <div className="Off_service_container">
-                  <ListItem className="Off_services">
+                  <ListItem className="Off_services" onClick={toggleDrawer(false)}>
                   <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontSize:"16px",fontWeight:"400"}}>Virtual construction</h3></Link>
                     <FaAngleRight />
                   </ListItem>
-                  <ListItem className="Off_services">
+                  <ListItem className="Off_services" onClick={toggleDrawer(false)}>
                   <Link to="/service" style={{textDecoration:"none",color:"#000"}}><h3 style={{fontSize:"16px",fontWeight:"400"}}>Structural engineering service</h3></Link>
                     <FaAngleRight />
                   </ListItem>
-                  <ListItem className="Off_services">
+                  <ListItem className="Off_services" onClick={toggleDrawer(false)}>
                   <Link to="/service" style={{textDecoration:"none",color:"#000"}}> <h3 style={{fontSize:"16px",fontWeight:"400"}}>MEP engineering service</h3></Link>
                     <FaAngleRight />
                   </ListItem>
-                  <ListItem className="Off_services">
+                  <ListItem className="Off_services" onClick={toggleDrawer(false)}>
                   <Link to="/service" style={{textDecoration:"none",color:"#000"}}><h3 style={{fontSize:"16px",fontWeight:"400"}}>Support service</h3></Link>
                     <FaAngleRight />
                   </ListItem>

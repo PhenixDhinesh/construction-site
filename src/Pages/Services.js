@@ -5,11 +5,10 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 
 import "../styleSheets/service.css";
 function Services() {
-  const [showTab, setShowtab] = useState(1);
+  const [showTab, setShowtab] = useState(0);
   const handleClick = (e) => {
     setShowtab(e);
   };
-  const [showDrop, setDrop] = useState(false);
   return (
     <div>
       <Header />
@@ -128,6 +127,7 @@ function Services() {
               </div>
             )}
           </div>
+          
           {showTab && <div className="offers_image"></div>}
         </div>
         <div className="offers_container" id="res_offer">
