@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import ladder from '../assets/ladder.svg'
 import '../styleSheets/about.css'
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
   return (
     <div>
       <Header/>

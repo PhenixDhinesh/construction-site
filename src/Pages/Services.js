@@ -1,14 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { LiaAngleDownSolid } from "react-icons/lia";
+import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
 
 import "../styleSheets/service.css";
 function Services() {
-  const [showTab, setShowtab] = useState(0);
-  const handleClick = (e) => {
-    setShowtab(e);
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
+  const [showTab, setShowTab] = useState(0);
+
+  const showContent = [
+    {
+      content:
+        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+      image: "path/to/image1.jpg", // Update with valid image path
+    },
+    {
+      content:
+        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+
+      image: "path/to/image2.jpg",
+    },
+    {
+      content:
+        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+
+      image: "path/to/image3.jpg",
+    },
+    {
+      content:
+        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+
+      image: "path/to/image4.jpg",
+    },
+  ];
+
+  const handleClick = (index) => {
+    // Toggle the state: if already showing, hide; if not, show the clicked tab
+    setShowTab(showTab === index ? 0 : index);
   };
+
   return (
     <div>
       <Header />
@@ -45,174 +77,223 @@ function Services() {
           </p>
           <div className="divider"></div>
         </div>
+
         <div className="offers_container">
+          {/* Define the tabs with click handlers to set showTab */}
           <div className="offers">
             <div className="offers_name">
-              <h3> BIM - ARCHITECTURAL</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(1)}
-              />
+              <h3>BIM - ARCHITECTURAL</h3>
+              {showTab === 1 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(1)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(1)}
+                />
+              )}
             </div>
             {showTab === 1 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
                 </div>
               </div>
             )}
 
             <div className="offers_name">
-              <h3> BIM - STRUCTURAL</h3>
-
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(2)}
-              />
+              <h3>Structural Engineering</h3>
+              {showTab === 2 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(2)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(2)}
+                />
+              )}
             </div>
             {showTab === 2 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
                 </div>
               </div>
             )}
             <div className="offers_name">
-              <h3> BIM - MEP</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(3)}
-              />
+              <h3>MEP Engineering</h3>
+              {showTab === 3 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(3)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(3)}
+                />
+              )}
             </div>
             {showTab === 3 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
                 </div>
               </div>
             )}
             <div className="offers_name">
-              <h3> Infrastructure Model</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(4)}
-              />
+              <h3>Support Services</h3>
+              {showTab === 4 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(4)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(4)}
+                />
+              )}
             </div>
-
             {showTab === 4 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
                 </div>
               </div>
             )}
           </div>
-          
-          {showTab===0 ? '' : <div className="offers_image"></div>}
+
+          {/* Display content based on current showTab */}
+          {showTab > 0 && (
+            <div className="about_offers_name">
+              <div className="offers_image">
+                
+                <img src={showContent[showTab - 1].image} alt="" />
+              </div>
+            </div>
+          )}
         </div>
+
+        {/* mobile and tablet view */}
         <div className="offers_container" id="res_offer">
           <div className="offers">
             <div className="offers_name">
               <h3> BIM - ARCHITECTURAL</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(1)}
-              />
+              {showTab === 1 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(1)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(1)}
+                />
+              )}
             </div>
             {showTab === 1 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
-                  <div className="offers_image"></div>
+                </div>
+                <div className="offers_image">
+                  <img src={showContent[showTab - 1].image} alt="" />
                 </div>
               </div>
             )}
 
             <div className="offers_name">
               <h3> BIM - STRUCTURAL</h3>
-
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(2)}
-              />
+              {showTab === 2 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(2)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(2)}
+                />
+              )}
             </div>
 
             {showTab === 2 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
-                  <div className="offers_image"></div>
+                </div>
+                <div className="offers_image">
+                  <img src={showContent[showTab - 1].image} alt="" />
                 </div>
               </div>
             )}
             <div className="offers_name">
               <h3> BIM - MEP</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(3)}
-              />
+              {showTab === 3 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(3)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(3)}
+                />
+              )}
             </div>
             {showTab === 3 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
-                  <div className="offers_image"></div>
+                </div>
+                <div className="offers_image">
+                  <img src={showContent[showTab - 1].image} alt="" />
                 </div>
               </div>
             )}
             <div className="offers_name">
               <h3> Infrastructure Model</h3>
-              <LiaAngleDownSolid
-                className="icon"
-                onClick={() => handleClick(4)}
-              />
+              {showTab === 4 ? (
+                <LiaAngleUpSolid
+                  className="icon"
+                  onClick={() => handleClick(4)}
+                />
+              ) : (
+                <LiaAngleDownSolid
+                  className="icon"
+                  onClick={() => handleClick(4)}
+                />
+              )}
             </div>
 
             {showTab === 4 && (
               <div className="about_offers_name">
                 <div className="about_Offers">
                   <p className="about_offer">
-                    Curabitur molestie sit amet urna at euismod. In non
-                    vulputate urna. Nam faucibus est eu lacus ornare, ut cursus
-                    massa semper. Curabitur lorem lacus, placerat ut fermentum
-                    sit amet, egestas sit amet metus.
+                    {showContent[showTab - 1].content}
                   </p>
-                  <div className="offers_image"></div>
+                </div>
+                <div className="offers_image">
+                  <img src={showContent[showTab - 1].image} alt="" />
                 </div>
               </div>
             )}
@@ -220,9 +301,7 @@ function Services() {
         </div>
       </div>
 
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

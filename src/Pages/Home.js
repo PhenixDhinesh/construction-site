@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../styleSheets/home.css";
 import groups from "../assets/groups.svg";
 import map from "../assets/map.svg";
@@ -15,7 +15,9 @@ import Footer from "./Footer";
 
 export default function Home() {
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
   return (
     <div>
     <Header/>

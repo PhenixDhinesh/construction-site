@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import phone from "../assets/call.svg"
@@ -7,6 +7,9 @@ import store  from "../assets/store.svg"
 import location from "../assets/locationMap.svg"
 import '../styleSheets/contact.css'
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
   return (
     <div>
       <Header/>

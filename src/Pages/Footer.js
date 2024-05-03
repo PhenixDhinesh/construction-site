@@ -1,7 +1,16 @@
 import React from 'react'
 import whiteLogo from "../assets/whiteLogo.svg";
 import poweredBy from "../assets/poweredBy.svg";
+import { Link } from 'react-router-dom';
+
 function Footer() {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth', // Smooth scrolling to the top
+    });
+  };
+
   return (
     <div>
       
@@ -18,12 +27,12 @@ function Footer() {
           </div>
           <div className="contact_detail_container">
             <div className="nav-Container">
-              <p>Home</p>
-              <p>Our services</p>
-              <p>About us</p>
-              <p>Contact us</p>
+            <Link to="/" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Home</p></Link>
+            <Link to="/service" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Our services</p></Link>
+            <Link to="/about" style={{textDecoration:"none",color:"#fff"}}><p className='links'>About Us</p></Link>
+            <Link to="/contact" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Contact Us</p></Link>
               <p>Get quote now</p>
-              <p>Back to top</p>
+            <Link to="/"  onClick={handleScrollToTop} style={{textDecoration:"none",color:"#fff"}}><p className='links'>Back to Top</p></Link>
             </div>
 
             <div className="contact-Container">

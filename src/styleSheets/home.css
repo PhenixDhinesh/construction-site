@@ -26,15 +26,23 @@ body{
   display: flex;
   gap: 3rem;
 }
-@media (max-width: 900px){
+@media (max-width: 560px) {
+  .toggle_icon {
+    display: initial;
+  }
+  .nav_sec {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
 
 
-.toggle_icon {
-  display: initial;
-}
-.nav_sec {
-  display: none !important;
-}
+  .toggle_icon {
+    display: initial;
+  }
+  .nav_sec {
+    display: none !important;
+  }
 }
 
 .nav_sec > .nav_link {
@@ -52,14 +60,16 @@ cursor: pointer;
   width:267px;
   height:201px;
   border-radius: 1px 1px 0 0;
-  display: flex;
   position: absolute;
   z-index:1000;
+  top:5rem;
   right:25rem;
   background: #F7F7F7;
   flex-direction: column;
   padding:15px 10px;
 }
+
+
 .Off_service_container{
   width:267px;
   height:201px;
@@ -169,6 +179,9 @@ button {
   .banner {
     display: none !important;
   }
+  .content_text {
+    gap: 1rem;
+  }
   .content_text > h3 {
     font-size: 28px;
   }
@@ -179,6 +192,7 @@ button {
   }
   .content {
     padding: 3rem  0  30px 30px;
+    gap:1.5rem;
   }
   button {
     width: 148px;
@@ -326,6 +340,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  overflow-x: hidden;
 
 }
 
@@ -363,7 +378,6 @@ button {
   white-space: nowrap; 
   width:90vw;
   padding: 10px; 
-  overflow-x: hidden;
 }
 .animation_scroll {
   display:flex; /* Enables flex layout */

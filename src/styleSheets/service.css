@@ -34,11 +34,12 @@ border-radius:10px ;
 background-color: #E7E2E2;
 }
 .offers_container_box{
-    padding:9rem 6rem 0;
+    padding:7rem 6rem;
     display:flex;
     align-items: flex-start;
     flex-direction: column;
     gap:4rem;
+    
     background-color: #F7F7F7;
     height:1005px;
 }
@@ -71,7 +72,7 @@ background-color: #E7E2E2;
     margin:3rem 0;
 }
 .offers_image{
-    width:520px;
+    width:40vw;
     height:306px;
     background: #E7E2E2;
     border-radius:10px ;
@@ -82,8 +83,13 @@ background-color: #E7E2E2;
    display: flex;
    align-items: center;
    text-align: justify;
+   cursor: pointer;
    justify-content: space-between;
 }
+.about_offers_name {
+    transition: all 0.3s ease-in-out;
+  }
+  
 .about_Offers{
     display: flex; 
     width:100% !important;
@@ -99,9 +105,15 @@ background-color: #E7E2E2;
     display: flex;
     text-align: justify;
 }
+
+.icon:focus {
+    transform: rotate(180deg); 
+  }
 .offers_name>.icon{
 font-size:28px ;
 color:#000000;
+transition: transform 0.3s ease-in-out;
+
 }
 .offers_name>h3{
     font-size: 28px;
@@ -115,6 +127,8 @@ color:#000000;
 @media (max-width: 560px){
     .about_offer{
         width:80vw;
+        margin: 0;
+
         font-size: 12px;
     }
     .about_Offers{
@@ -125,6 +139,11 @@ color:#000000;
         justify-content: center;
         gap:1rem;
         flex-direction: column;
+    }
+    .about_our_service_image{
+        width:84vw;
+height:180px;
+
     }
     .about_our_service{
         padding:5rem 30px;
@@ -139,7 +158,7 @@ color:#000000;
     font-size:28px;
    }
 .about_our_service_content >p{
-    font-size: 16px;
+    font-size: 12px;
 }
 .what_offer{
     align-items: flex-start;
@@ -169,7 +188,7 @@ display: none;
 }
 .offers_image{
    width:85vw;
-
+   margin-bottom: 10px;
     height:186px;
 }
 .offers_name{
@@ -184,12 +203,46 @@ display: none;
 }
 .offers_name>.icon{
     font-size: 14px;
-}
-}
-.active{
-    display: initial;
-}
-.tab-panefade{
-    display: none;
 
 }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .about_our_service{
+        display: block;
+
+    }
+    .about_our_service_content{
+        margin-bottom: 2rem;
+        gap:1rem;
+    }
+    .offers_container{
+        display: none;
+        }
+        #res_offer{
+            width:100%;
+            display:initial;
+        }
+        .offers_image{
+            width:70vw;
+            margin-bottom:1.4rem;
+             height:186px;
+         }
+         .offers_name{
+            padding:0;
+            width:70vw;
+            gap:1px !important;
+            align-items: center !important;
+         
+         }
+         .about_offer{
+            width:70vw;
+        }
+        .offers{
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+        }
+        .offers_container_box{
+            height:auto;
+        }
+  }

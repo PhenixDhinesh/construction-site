@@ -5,7 +5,8 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import { LiaAngleDownSolid } from "react-icons/lia";
+import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
+
 import logo from "../assets/Logo.svg";
 import { Link } from 'react-router-dom';
 
@@ -18,10 +19,17 @@ export default function Header() {
     const toggleDrawer = (newOpen) => () => {
       setOpen(newOpen);
     };
-  
     const toggleServicesDropdown = (e) => {
       e.stopPropagation();
       setShowServicesDropdown(!showServicesDropdown);
+    };
+  
+    const handleMouseEnter = () => {
+      setShowBox(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setShowBox(false);
     };
   
   
@@ -34,7 +42,12 @@ export default function Header() {
               <Link to="/" style={{textDecoration:"none",color:"#000"}}><ListItem onClick={toggleDrawer(false)}>Home</ListItem></Link>
               <ListItem onClick={toggleServicesDropdown} className="off_service">
                 <p>Our Service</p>
-                <LiaAngleDownSolid />
+              
+                {showServicesDropdown ? (
+                <LiaAngleUpSolid /> // Display up arrow if true
+              ) : (
+                <LiaAngleDownSolid /> // Display down arrow if false
+              )}
               </ListItem>
               {showServicesDropdown && (
                 <div className="Off_service_container">
@@ -73,21 +86,11 @@ export default function Header() {
         <div className="nav_sec">
           <nav className="nav_link">
             <Link to="/" style={{textDecoration:"none",color:"#000"}}><p className='links'>Home</p></Link>
-          <p onClick={() => setShowBox(!showBox)}>Our services</p>
-          <Link to="/about" style={{textDecoration:"none",color:"#000"}}> <p>About us</p></Link>
-          <Link to="/contact" style={{textDecoration:"none",color:"#000"}}> <p>Contact us</p></Link>
-          </nav>
-          <button>get quote now</button>
-        </div>
-        <div className="toggle_icon">
-        <img src={menu} alt="" onClick={toggleDrawer(true)} />
-      </div>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {drawerList}
-      </Drawer>
-      </header>
-
-      {showBox && (
+  
+          <p className='show_service'     onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave} >Our services</p>
+          {showServicesDropdown && 
+               
         <div className="service_container">
              <div className="services">
            <Link to="/service" style={{textDecoration:"none",color:"#000"}}>
@@ -107,8 +110,22 @@ export default function Header() {
             <FaAngleRight />
           </div>
         </div>
-      )}
+          }
 
+          <Link to="/about" style={{textDecoration:"none",color:"#000"}}> <p>About us</p></Link>
+          <Link to="/contact" style={{textDecoration:"none",color:"#000"}}> <p>Contact us</p></Link>
+          </nav>
+          <button>get quote now</button>
+        </div>
+        <div className="toggle_icon">
+        <img src={menu} alt="" onClick={toggleDrawer(true)} />
+      </div>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {drawerList}
+      </Drawer>
+      </header>
+
+   
       <div className="banner">
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
@@ -132,8 +149,6 @@ export default function Header() {
       </div>
 
       <div className="res_banner">
-        {/* <img src={banner} className="banner_img" alt="" /> */}
-        {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
         <div className="content">
           <div className="content_text">
