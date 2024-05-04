@@ -115,7 +115,8 @@ export default function Header() {
           <Link to="/about" style={{textDecoration:"none",color:"#000"}}> <p>About us</p></Link>
           <Link to="/contact" style={{textDecoration:"none",color:"#000"}}> <p>Contact us</p></Link>
           </nav>
-          <button>get quote now</button>
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">  <button>get quote now</button>
+</a>
         </div>
         <div className="toggle_icon">
         <img src={menu} alt="" onClick={toggleDrawer(true)} />
@@ -144,7 +145,8 @@ export default function Header() {
             </p>
           </div>
 
-          <button>get quote now</button>
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">  <button>get quote now</button>
+</a>
         </div>
       </div>
 
@@ -164,7 +166,8 @@ export default function Header() {
             </p>
           </div>
 
-          <button>get quote now</button>
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..." className='a_link'>  <button>get quote now</button>
+</a>
         </div>
       </div>
     </div>

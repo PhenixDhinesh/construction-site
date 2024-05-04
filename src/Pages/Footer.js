@@ -10,7 +10,9 @@ function Footer() {
       behavior: 'smooth', // Smooth scrolling to the top
     });
   };
-
+  const showInMapClicked = () => {
+    window.open("https://www.google.com/maps/place/Techforge/@11.6711929,78.157041,17z/data=!3m2!4b1!5s0x3babf1b380af700d:0x45f4fa32b2a711ac!4m6!3m5!1s0x3babf1c56dd4f21d:0xf875300e92d15108!8m2!3d11.6711929!4d78.1596159!16s%2Fg%2F11bwflt448?entry=ttu" );
+  };
   return (
     <div>
       
@@ -31,14 +33,14 @@ function Footer() {
             <Link to="/service" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Our services</p></Link>
             <Link to="/about" style={{textDecoration:"none",color:"#fff"}}><p className='links'>About Us</p></Link>
             <Link to="/contact" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Contact Us</p></Link>
-              <p>Get quote now</p>
+              <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">Get quote now</a>
             <Link to="/"  onClick={handleScrollToTop} style={{textDecoration:"none",color:"#fff"}}><p className='links'>Back to Top</p></Link>
             </div>
 
             <div className="contact-Container">
-              <p>+91 983432423</p>
-              <p>Contact@gmail.com</p>
-              <p className="address">
+            <a href={`tel:${+91983432423}`}>+91 983432423</a>
+              <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">Contact@gmail.com</a>
+              <p className="address" onClick={showInMapClicked}>
                 SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
               </p>
             </div>

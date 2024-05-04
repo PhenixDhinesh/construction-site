@@ -125,7 +125,7 @@ align-items: center;
   align-items: center;
   gap:10px;
 }
-button {
+button,.a_link  {
   width: 165px;
   height: 42px;
   border-radius: 8px;
@@ -133,6 +133,9 @@ button {
   text-transform: capitalize;
   color: #fff;
   background-color: var(--main-color);
+}
+button,.a_link :hover{
+  cursor: pointer;
 }
 .banner {
   width:100vw;
@@ -710,13 +713,25 @@ button {
 }
 .contact-Container {
   text-align: right;
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+
 }
 
 .contact-Container > p {
   margin-bottom: 1rem;
 }
+.contact-Container > a{
+  text-decoration: none !important;
+  color:#fff;
+
+}
 .contact-Container>.address{
-  width:30vw;
+  width:20vw;
+}
+.contact-Container>.address:hover{
+  cursor: pointer;
 }
 .nav-Container {
   display: grid;
@@ -724,7 +739,10 @@ button {
   grid-gap: 1.4rem;
   column-gap: 1.5rem;
 }
-
+.nav-Container >a{
+  text-decoration: none !important;
+  color:#fff;
+}
 .nav-Container > p {
   margin: 0; /* To avoid extra spacing caused by default paragraph margins */
 }
@@ -733,7 +751,9 @@ button {
   grid-column: 1;
   grid-row: 1;
 }
-
+.nav-Container > p:hover{
+  cursor:pointer
+}
 .nav-Container > p:nth-child(2) {
   grid-column: 2;
   grid-row: 1;

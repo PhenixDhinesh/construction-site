@@ -13,6 +13,9 @@
     flex-direction: column;
     gap:2rem;
 }
+.contact_container:hover{
+    cursor: pointer;
+}
 .contact_details_container{
     width:100vw;
     background-color: #F7F7F7;
