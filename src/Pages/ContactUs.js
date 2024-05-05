@@ -20,7 +20,13 @@ function ContactUs() {
       <Header />
       <div className="contact_container_box">
         <div className="map_image">
-          <img src={location} alt="" className="location_map" />
+        <iframe
+        className="location_map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.683132712172!2d78.157041!3d11.6711929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1c56dd4f21d%3A0xf875300e92d15108!2sTechforge!5e0!3m2!1sen!2sin!4v1625248572881!5m2!1sen!2sin"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
         </div>
       </div>
 
@@ -28,9 +34,9 @@ function ContactUs() {
         <div className="contact_details_container_box">
           <div className="contact_container">
             <div className="contact_icon">
-            <a href={`tel:${+918124594875}`} style={{textDecoration:"none",color:"#000000"}}>
+            <a className="contact_icon" href={`tel:${+918124594875}`} style={{textDecoration:"none",color:"#000000"}}>
               <div className="contact_icon_box">
-                <img src={phone} alt="" />
+                <img src={phone}     alt="" />
               </div>
               <h3>Phone</h3>
               </a>
@@ -42,22 +48,19 @@ function ContactUs() {
           </div>
           <div className="contact_container">
             <div className="contact_icon">
-              <a
+              <a className="contact_icon"
                 href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
                 style={{ textDecoration: "none", color: "#000000" }}
               >
                 <div className="contact_icon_box">
                   <img src={mail} alt="" />
                 </div>
-              </a>
               <h3>
-                <a
-                  href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
-                  style={{ textDecoration: "none", color: "#000000" }}
-                >
+             
                   Email
-                </a>
               </h3>
+              </a>
+
             </div>
             <div className="contact_detail">
               <h3>Mr.Arul</h3>
@@ -84,6 +87,68 @@ function ContactUs() {
               <p>
                 +SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="contact_details_container_box_resposive">
+         <div className="phone_email">
+          <div className="contact_container">
+            <div className="contact_icon">
+            <a className="contact_icon" href={`tel:${+918124594875}`} style={{textDecoration:"none",color:"#000000"}}>
+              <div className="contact_icon_box">
+                <img src={phone}     alt="" />
+              </div>
+              <h3>Phone</h3>
+              </a>
+            </div>
+            <div className="contact_detail">
+              <h3>Mr.Arul</h3>
+              <p><a href={`tel:${+918124594875}`} style={{textDecoration:"none",color:"#000000"}}>+91 81245 94875</a></p>
+            </div>
+          </div>
+          <div className="contact_container">
+            <div className="contact_icon">
+              <a className="contact_icon"
+                href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+                style={{ textDecoration: "none", color: "#000000" }}
+              >
+                <div className="contact_icon_box">
+                  <img src={mail} alt="" />
+                </div>
+              <h3>
+             
+                  Email
+              </h3>
+              </a>
+
+            </div>
+            <div className="contact_detail">
+              <h3>Mr.Arul</h3>
+              <p>
+                <a
+                  href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+                  style={{ textDecoration: "none", color: "#000000" }}
+                >
+                  contact@company.com
+                </a>{" "}
+              </p>
+            </div>
+          </div>
+          </div>
+          <div className="contact_container" id="contact_address">
+            <div className="contact_icon" onClick={showInMapClicked}>
+              <div className="contact_icon_box">
+                {" "}
+                <img src={store} alt="" />
+              </div>
+              <h3>Address</h3>
+            </div>
+            <div className="contact_detail" onClick={showInMapClicked}>
+              {/* <h3>Mr.Arul</h3> */}
+              <p style={{width:"40vw"}}>
+                +SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
+              </p>
+           
             </div>
           </div>
         </div>

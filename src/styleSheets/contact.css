@@ -1,17 +1,57 @@
 .contact_container_box{
-    padding:10rem 50px;
+    padding:5rem 50px;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .map_image>.location_map{
     width:90vw;
+    height:60vh;
+    border:none;
+    border-radius:10px;
+}
+.contact_details_container_box_resposive{
+    display:none;
+}
+@media (max-width: 560px){
+    .map_image>.location_map{
+        height:25vh;
+    }
+}
+@media (min-width: 768px)and (max-width:1028px){
+    .map_image>.location_map{
+        width:90vw;
+        height:30vh;
+        border:none;
+        border-radius:10px;
+    }
+    .contact_details_container_box_resposive{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width:90vw;
+        gap:2.5rem;
+    }
+    .phone_email{
+display: flex;
+gap:2rem;
+justify-content: space-between;
+width:80%;
+ 
+    }
+    .contact_details_container_box{
+  display: none !important;
+    }
+    .contact_address{
+        width:100%;
+    }
 }
 .contact_container{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap:2rem;
+    width:100%;
 }
 .contact_container:hover{
     cursor: pointer;
@@ -37,7 +77,7 @@
     font-size:32px;
     line-height: 38px;
     text-align: center;
-    color: #714E4E;
+    color: var(--main-color);
     text-transform: capitalize;
     font-weight:500;   
 }
@@ -63,7 +103,7 @@ font-family:'Roboto',sans-serif ;
 .contact_icon_box{
     width:60px;
     height:60px;
-    background: #714E4E;
+    background: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
