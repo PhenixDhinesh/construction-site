@@ -145,6 +145,9 @@ button,.a_link :hover{
 .res_banner{
   background-image: url("../assets/res_banner.svg");
   display: none;
+  background-repeat: no-repeat; 
+  /* Stretch the image to fit the element's dimensions */
+
 }
 .content {
   padding: 7rem 50px;
@@ -171,6 +174,7 @@ button,.a_link :hover{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
 @media (max-width: 560px){
   .header {
     padding: 20px 30px;
@@ -265,7 +269,8 @@ button,.a_link :hover{
   line-height: 17.58px;
 }
 
-@media (max-width: 768px){
+
+@media (min-width: 768px) and (max-width:960px){
   .achivement_container {
     padding: 5rem 30px !important;
     height: 430px;
@@ -411,7 +416,7 @@ button,.a_link :hover{
 }
 .virtual_construction_contianer {
   /* margin-top:5rem; */
-  height: 1022px;
+  /* height: 1022px; */
   width:100vw;
   background-color: #f7f7f7;
   padding: 5rem 0px;
@@ -424,18 +429,32 @@ button,.a_link :hover{
 }
 @media (max-width:1200px){
   .virtual_construction_cards {
-    height: 400px;
-    overflow-x: auto;
-    margin-top: 3rem !important;
-    gap: 2rem !important;
+
+    gap: 0rem !important;
   }
+}
+@media (max-width:1200px){
+  .virtual_construction_cards {
+    /* height: 400px; */
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-top: 3rem !important;
+    gap: 3rem;
+    scrollbar-width: none;
+  }
+  .virtual_construction_box {
+    display: flex;
+   flex-direction: column; 
+   padding: 20px 0px 20px 50px;
+ }
+
 }
 @media (max-width: 767px) {
   .virtual_construction_title {
     align-items: flex-start !important;
   }
   .virtual_construction_contianer {
-    height: 800px;
+    /* height: 800px; */
     padding: 5rem 0px;
   }
 
@@ -460,10 +479,9 @@ button,.a_link :hover{
     width: 250px !important;
   }
   .virtual_construction_cards {
-    height: 400px;
+    /* height: 400px; */
     overflow-x: auto;
-    margin-top: 3rem !important;
-    gap: 2rem !important;
+    gap: 2rem ;
   }
 
   .card-body > p{
@@ -616,6 +634,9 @@ button,.a_link :hover{
   .client_container {
     overflow-x: auto !important;
     gap: 2rem !important;
+    flex-wrap: wrap; 
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none;
   }
 }
 @media (max-width: 768px){
