@@ -41,7 +41,7 @@ background-color: #E7E2E2;
     gap:4rem;
     
     background-color: #F7F7F7;
-    height:1005px;
+    /* height:1005px; */
 }
 .what_offer{
     display: flex;
@@ -63,6 +63,7 @@ background-color: #E7E2E2;
 .offers_container{
     width:100%;
     display: flex;
+    gap:1rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -206,7 +207,7 @@ display: none;
 
 }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 560px) and (max-width: 1200px) {
     .about_our_service{
         display: block;
 
