@@ -430,7 +430,7 @@ button,.a_link :hover{
    padding:0 50px;
 }
 
-@media  (min-width:768px) and (max-width:1200px){
+@media  (min-width:768px) and (max-width:1300px){
   .virtual_construction_cards {
     overflow-x: auto;
     margin-top: 3rem !important;
@@ -481,7 +481,7 @@ button,.a_link :hover{
 }
 @media (max-width: 768px) {
   .virtual_construction_title {
-    align-items: flex-start !important;
+    align-items: flex-start ;
   }
   .virtual_construction_contianer {
     /* height: 800px; */
@@ -653,7 +653,7 @@ button,.a_link :hover{
 }
 
 .client_words_container > h3 {
-  text-align: center !important;
+  text-align: center;
   font-size: 36px ;
   line-height: 43.57px;
   font-weight: bold;
@@ -663,9 +663,12 @@ button,.a_link :hover{
   display: grid;
   grid-template-columns:auto auto auto auto;
   gap: 2.2rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+
 }
 
-@media (min-width:768px) and (max-width: 1200px){
+@media (min-width:768px) and (max-width: 1300px){
 #last-card{
   margin-right:20px;
 }
@@ -686,9 +689,12 @@ button,.a_link :hover{
 #card__contain{
   width:250px
 }
-
+.client_words_container > h3{
+  text-align: left;
+  font-size: 28px;
 }
-@media  (max-width: 768px){
+}
+@media  (max-width: 800px){
   .client_container {
     overflow-x: auto !important;
     gap: 2rem !important;
@@ -697,7 +703,7 @@ button,.a_link :hover{
 
 
   .client_words_container > h3{
-    text-align: left !important;
+    text-align: center;
     font-size: 28px;
   }
   .clients_grid > p{
