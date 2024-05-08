@@ -450,6 +450,34 @@ button,.a_link :hover{
   .virtual_construction_cards {
     gap: 0.1rem !important;
   }
+  /* .card-img-top {
+    width: 250px;
+  }
+  .card-body {
+    width: 250px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .card-body > .card-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 29.05px;
+    color: #714e4e;
+    text-transform: uppercase;
+  }
+  .card-body > .card-text {
+    text-align: justify;
+    font-size: 14px;
+    width: 300px;
+    line-height: 18.75px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+  } */
 
 }
 @media (max-width: 768px) {
@@ -649,6 +677,12 @@ button,.a_link :hover{
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     scrollbar-width: none;
   }
+}
+@media (min-width:320px) and (max-width:500px){
+#card__contain{
+  width:250px
+}
+
 }
 @media  (max-width: 768px){
   .client_container {

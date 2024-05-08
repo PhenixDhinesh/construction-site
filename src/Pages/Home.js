@@ -86,7 +86,7 @@ export default function Home() {
             </p>
           </div>
           <div className="virtual_construction_cards">
-            <div class="card">
+            <div class="card" >
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
 
           <div className="client_container">
-            <div className="card">
+            <div className="card" id="card__contain">
               <div className="clients_grid">
                 <img src={client1} alt="" />
                 <h3>raju ram</h3>
@@ -179,7 +179,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="card">
+            <div className="card" id="card__contain">
               <div className="clients_grid">
                 <img src={client2} alt="" />
                 <h3>Nadarajan</h3>
@@ -195,7 +195,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="card">
+            <div className="card" id="card__contain">
               <div className="clients_grid">
                 <img src={client3} alt="" />
                 <h3>Abdul rahman</h3>
@@ -211,7 +211,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="card" id="last-card">
+            <div className="card card__contain" id="last-card">
               <div className="clients_grid">
                 <img src={client4} alt="" />
                 <h3>Dr.P Kumar</h3>
