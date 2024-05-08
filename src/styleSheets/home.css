@@ -5,6 +5,8 @@
 }
 :root {
   --main-color: #714E4E;
+  scrollbar-width: none;
+
 }
 body{
   font-family: 'Inter', sans-serif;
@@ -425,10 +427,10 @@ button,.a_link :hover{
 .virtual_construction_box {
    display: flex;
    flex-direction: column; 
-   padding-left:50px;
+   padding:0 50px;
 }
 
-@media (max-width:1200px){
+@media  (min-width:768px) and (max-width:1200px){
   .virtual_construction_cards {
     overflow-x: auto;
     margin-top: 3rem !important;
@@ -439,6 +441,8 @@ button,.a_link :hover{
   .virtual_construction_box {
     display: flex;
    flex-direction: column; 
+   padding-right:0 !important;
+
  }
 
 }
@@ -612,7 +616,7 @@ button,.a_link :hover{
   display: flex;
   flex-direction: column;
   gap:4rem;
-  padding: 5rem 0 5rem 50px;
+  padding: 5rem  50px;
 }
 
 .client_words_container > h3 {
@@ -631,6 +635,9 @@ button,.a_link :hover{
 @media (min-width:768px) and (max-width: 1200px){
 #last-card{
   margin-right:20px;
+}
+.client_words {
+  padding-right:0 ;
 }
 }
 @media (max-width: 1200px){
