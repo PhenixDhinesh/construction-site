@@ -125,7 +125,7 @@ export default function Home() {
                 <button>read more...</button>
               </div>
             </div>
-            <div class="card">
+            <div class="card" id="last-card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -211,7 +211,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="card">
+            <div className="card" id="last-card">
               <div className="clients_grid">
                 <img src={client4} alt="" />
                 <h3>Dr.P Kumar</h3>
