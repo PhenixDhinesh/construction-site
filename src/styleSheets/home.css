@@ -36,7 +36,7 @@ body{
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 560px) and (max-width: 1200px) {
 
 
   .toggle_icon {
@@ -147,6 +147,8 @@ button,.a_link :hover{
 .res_banner{
   background-image: url("../assets/res_banner.svg");
   display: none;
+  width:100%;
+  background-size:100%;
   background-repeat: no-repeat; 
   /* Stretch the image to fit the element's dimensions */
 
@@ -272,7 +274,7 @@ button,.a_link :hover{
 }
 
 
-@media (min-width: 768px) and (max-width:960px){
+@media (min-width: 560px) and (max-width:960px){
   .achivement_container {
     padding: 5rem 30px !important;
     height: 430px;
