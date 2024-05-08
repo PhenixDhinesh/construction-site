@@ -143,7 +143,7 @@ export default function Home() {
       </div>
 
       <div className="build_container">
-        <div className="virtual_construction_title">
+        <div className="virtual_construction_title build">
           <h3>Let us help you on build</h3>
           <p>
             Integer in est elit. Mauris placerat blandit massa quis
