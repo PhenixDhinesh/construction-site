@@ -13,6 +13,20 @@
     flex:1;
 
 }
+
+.service_banner {
+    width:100vw;
+    display: none;
+    position: relative;
+    background-image:url('../assets/service_banner.svg') ;
+  }
+  .service_res_banner{
+    background-image: url("../assets/res_service.svg");
+    width:100%;
+    background-size:100%;
+    background-repeat: no-repeat; 
+  
+  }
 .about_our_service_content>h3, .what_offer > h3{
     font-size:36px;
     font-family: 'Inter', sans serif;
@@ -188,9 +202,9 @@ display: none;
     display:initial;
 }
 .offers_image{
-   width:85vw;
+   width:80vw;
    margin-bottom: 10px;
-    height:186px;
+    height:180px;
 }
 .offers_name{
     padding:0;

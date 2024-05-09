@@ -12,6 +12,20 @@
   align-items: center;
   justify-content: center;
 }
+
+.contact_banner {
+  width:100%;
+  display: none;
+  position: relative;
+  background-image:url('../assets/contact_banner.svg') ;
+}
+.contact_res_banner{
+  background-image: url("../assets/contact_res_banner.svg");
+  width:100%;
+  background-size:100%;
+  background-repeat: no-repeat; 
+
+}
 .map_image > .location_map {
   border: none;
   border-radius: 10px;

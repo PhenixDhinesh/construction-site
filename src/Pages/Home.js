@@ -21,15 +21,58 @@ export default function Home() {
   return (
     <div>
     <Header/>
+
+    <div className="banner">
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
+
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Engineered with Precision. Delivered with Excellence
+            
+            </h3>
+            <p>
+             We prioritise rigorous planning and execution, creating extraordinary outcomes, and bringing your vision to life with the greatest level of quality and expertise.
+            </p>
+          </div>
+
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..." className="a_link">
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+      <div className="res_banner">
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Engineered with Precision. Delivered with Excellence
+            </h3>
+            <p>
+            We prioritise rigorous planning and execution, creating extraordinary outcomes, and bringing your vision to life with the greatest level of quality and expertise
+            </p>
+          </div>
+
+          <a
+            href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+            className="a_link"
+          >
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+      
       <div className="achivement_container" >
         <div className="text">
           <h3>
-            Lorem ipsum is <br />
-            simply dummy text
+          Building the New Realty
           </h3>
           <p>
-            Integer in est elit. Mauris placerat blandit massa quis
-            aliquam. Donec efficitur risus
+          Developing memorable and distinct structures that are sophisticated and renowned
           </p>
         </div>
         <div className="achivement_grid">
@@ -144,10 +187,10 @@ export default function Home() {
 
       <div className="build_container">
         <div className="virtual_construction_title build">
-          <h3>Let us help you on build</h3>
+          <h3>Let us help you Build</h3>
           <p>
-            Integer in est elit. Mauris placerat blandit massa quis
-            aliquam. Donec efficitur risus
+          From dream to reality, let's build it together. We make the process seamless.
+
           </p>
         </div>
         <div className="image">

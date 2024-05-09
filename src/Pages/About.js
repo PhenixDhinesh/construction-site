@@ -10,12 +10,59 @@ function About() {
   return (
     <div>
       <Header/>
+
+      <div className="about_banner">
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
+
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Building Trust, Building Excellence
+            </h3>
+            <p>
+            We're a team of passionate professionals dedicated to exceeding expectations and fostering lasting relationships with our clients. Explore our story and discover what sets us apart.
+
+            </p>
+          </div>
+
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+      <div className="about_res_banner">
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Building Trust, Building Excellence
+
+            </h3>
+            <p>
+            We're a team of passionate professionals dedicated to exceeding expectations and fostering lasting relationships with our clients. Explore our story and discover what sets us apart.
+
+            </p>
+          </div>
+
+          <a
+            href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+            className="a_link"
+          >
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+
       <div className='about_container'>
         <div className='about_container_box'>
-            <h3>About</h3>
+            <h3>About us</h3>
             <p>
-            Cras elementum arcu in feugiat dictum. Quisque nunc tortor, venenatis in venenatis lacinia, ornare ut arcu. Suspendisse non ante non nunc malesuada luctus ut ut elit. Curabitur sagittis nibh id venenatis posuere. Cras non dolor purus. Donec sem erat, fermentum eget placerat id, pulvinar non enim. Nam a congue ligula. Fusce non enim malesuada, tristique justo in, tincidunt eros. Curabitur commodo sem ut lacus rutrum, vitae commodo nunc convallis. Phasellus in libero ex. Vestibulum malesuada pellentesque velit, vel rhoncus massa gravida scelerisque. Vestibulum vestibulum vehicula volutpat. Integer molestie non ex sit amet congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras rhoncus volutpat egestas. Aliquam volutpat quis erat vel dignissim.
-            </p>
+            Decisive is a top engineering solutions supplier with various services, including virtual construction, BIM modelling, structural expertise, building infrastructure systems, documentation, pre-bid and feasibility services. Our professional engineers provide data-rich 3D models, structural analysis, and extensive documentation to help clients make educated decisions. We also give pre-bid and feasibility surveys to assist with project difficulties. Our dedication to cultivating true collaboration and trust is what distinguishes us from others
+               </p>
             <div className='about_image'>
                 <img src={ladder} alt="" className='ladder_image'/>
             </div>
@@ -25,12 +72,13 @@ function About() {
         <div className='vision_container_box'>
         <div className='vision'>
             <h3>vision</h3>
-            <p>Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat</p>
-        </div>
+            <p>   To be the most reliable, innovative partner and solution provider in the global construction Industry.
+  </p>  </div>
         <div className='mission'>
             <h3>mission</h3>
-            <p>Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus. Aenean varius vehicula enim, ac pulvinar nulla dapibus ac. </p>
-        </div>
+            <p>
+            We strongly believe, our future depends on the perfect balance between achieving our targets and the contribution that we can make to the socio-economic and environmental development of the communities
+</p>        </div>
         </div>
         
       </div>

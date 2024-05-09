@@ -18,6 +18,50 @@ function ContactUs() {
   return (
     <div>
       <Header />
+
+      <div className="contact_banner">
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
+
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Let's Get Started on Your Project
+            </h3>
+            <p>
+            Have a question? Ready to discuss your vision? Contact us today and we'll turn your dream build into reality.
+
+            </p>
+          </div>
+
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+      <div className="contact_res_banner">
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Let's Get Started on Your Project
+            </h3>
+            <p>
+            Have a question? Ready to discuss your vision? Contact us today and we'll turn your dream build into reality.
+            </p>
+          </div>
+
+          <a
+            href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+            className="a_link"
+          >
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
       <div className="contact_container_box">
         <div className="map_image">
         <iframe

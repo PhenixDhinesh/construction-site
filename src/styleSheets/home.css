@@ -171,18 +171,25 @@ button,.a_link :hover{
 }
 .content_text > h3 {
   font-size: 48px;
+  width:40vw;
 }
 .content_text > p {
   font-size: 20px;
-  width:500px;
+  width:40vw;
+  text-align: justify;
   line-height: 23.44px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
+.a_link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
 @media (max-width: 560px){
   .header {
-    padding: 20px 30px;
+    padding: 20px 20px 20px 10px;
   
   }
   .res_banner {
@@ -196,6 +203,7 @@ button,.a_link :hover{
   }
   .content_text > h3 {
     font-size: 28px;
+    width:300px;
   }
   .content_text > p {
     font-size: 14px;
@@ -893,7 +901,7 @@ button,.a_link :hover{
 .powered_container > p {
   margin-left: 1rem;
 }
-.powered_container > img {
+.powered_container >a, img {
   max-width: 100%;
 }
 .res_term_details {
@@ -913,6 +921,9 @@ button,.a_link :hover{
   }
   .footer_logo_container {
     width: 172px;
+  }  .footer_logo_container>img{
+    margin-left: -1.5rem;
+
   }
   .contact-Container > p, .contact-Container > a {
     font-size:12px !important;

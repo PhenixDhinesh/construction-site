@@ -7,7 +7,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
 
-import logo from "../assets/Logo.svg";
+import logo from "../assets/DE logo1 2.svg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -47,7 +47,7 @@ export default function Header() {
           <h2>Menu</h2>
           <div className="offcanvas_lists">
             <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-              <ListItem onClick={toggleDrawer(false)}>Home</ListItem>
+              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}> Home </p></ListItem>
             </Link>
             <ListItem onClick={toggleServicesDropdown} className="off_service">
               <p>Our Service</p>
@@ -122,13 +122,13 @@ export default function Header() {
             )}
             <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
               {" "}
-              <ListItem onClick={toggleDrawer(false)}>About us</ListItem>
+              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}>About us</p></ListItem>
             </Link>
             <Link
               to="/contact"
               style={{ textDecoration: "none", color: "#000" }}
             >
-              <ListItem onClick={toggleDrawer(false)}>Contact us</ListItem>
+              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}>Contact us</p></ListItem>
             </Link>
           </div>
         </List>
@@ -141,7 +141,7 @@ export default function Header() {
 <div className="header-part">
 <header className="header">
         <div className="logo_sec">
-          <img src={logo} alt="" />
+          <a href="www.decisiveengg.com" target="blank"><img src={logo} alt="" /></a>
         </div>
         <div className="nav_sec">
           <nav className="nav_link">
@@ -232,53 +232,7 @@ export default function Header() {
 </div>
 
 
-      <div className="banner">
-        {/* <img src={banner} className="banner_img" alt="" /> */}
-        {/* <img src={landing} className="res_banner_img" alt="" /> */}
-
-        <div className="content">
-          <div className="content_text">
-            <h3>
-              Lorem ipsum is <br />
-              simply dummy text
-            </h3>
-            <p>
-              Integer in est elit. Mauris placerat blandit massa quis aliquam.
-              Donec efficitur risus id sapien lobortis, vel tempor ligula
-              mollis. Aenean vitae nibh nec lacus molestie lobortis.
-            </p>
-          </div>
-
-          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
-            {" "}
-            <button>get quote now</button>
-          </a>
-        </div>
-      </div>
-
-      <div className="res_banner">
-        <div className="content">
-          <div className="content_text">
-            <h3>
-              Lorem ipsum is <br />
-              simply dummy text
-            </h3>
-            <p>
-              Integer in est elit. Mauris placerat blandit massa quis aliquam.
-              Donec efficitur risus id sapien lobortis, vel tempor ligula
-              mollis. Aenean vitae nibh nec lacus molestie lobortis.
-            </p>
-          </div>
-
-          <a
-            href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
-            className="a_link"
-          >
-            {" "}
-            <button>get quote now</button>
-          </a>
-        </div>
-      </div>
+     
     </div>
   );
 }

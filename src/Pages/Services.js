@@ -13,25 +13,23 @@ function Services() {
   const showContent = [
     {
       content:
-        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+        "Virtual Construction and BIM Services offer a revolutionary approach to the construction industry. By creating digital representations of buildings and infrastructure, this technology enhances visualization, coordination, and communication throughout the entire project lifecycle. With BIM, architectural, structural, and MEP systems are seamlessly integrated into a single model, fostering collaboration and improving project efficiency.",
       image: "path/to/image1.jpg", // Update with valid image path
     },
     {
       content:
-        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
+        "When it comes to Structural Engineering Services, our focus is on analyzing and designing structural elements within buildings and infrastructure. We prioritize the stability, strength, and safety of the structure, ensuring that it meets all necessary requirements. Our services encompass structural analysis, detailed design of components such as steel and rebar, as well as the preparation of accurate shop drawings and as-built drawings. ",
 
       image: "path/to/image2.jpg",
     },
     {
       content:
-        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
-
+        "MEP Engineering Services play a crucial role in the design and coordination of mechanical, electrical, and plumbing systems within buildings. Our team specializes in creating efficient HVAC systems, electrical distribution networks, plumbing layouts, and fire protection systems. We guarantee that these systems function effectively and meet the specific requirements of each building.",
       image: "path/to/image3.jpg",
     },
     {
       content:
-        "Curabitur molestie sit amet urna at euismod. In non vulputate urna. Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.",
-
+        "We also provide comprehensive Support Services to ensure the success of your project. Our offerings include quantity take-off services for accurate material estimation, model-based quantity take-off for precise quantity calculations, feasibility studies to assess project viability, and value engineering to optimize costs without compromising quality or performance. With our support and expertise, we are committed to guiding you through every step of the project lifecycle.",
       image: "path/to/image4.jpg",
     },
   ];
@@ -45,21 +43,58 @@ function Services() {
     <div>
       <Header />
 
+      <div className="service_banner">
+        {/* <img src={banner} className="banner_img" alt="" /> */}
+        {/* <img src={landing} className="res_banner_img" alt="" /> */}
+
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Mastering Every Facet of Construction: Building Solutions Crafted for Your Needs 
+
+            </h3>
+            <p>
+            Decisive Engineering offers a full spectrum of Engineering Solutions designed to the global construction industry. Our team collaborates closely with you to understand your needs and goals, translating them into exceptional results that exceed expectations. 
+
+            </p>
+          </div>
+
+          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
+      <div className="service_res_banner">
+        <div className="content">
+          <div className="content_text">
+            <h3>
+            Mastering Every Facet of Construction: Building Solutions Crafted for Your Needs 
+
+            </h3>
+            <p>
+            Decisive Engineering offers a full spectrum of Engineering Solutions designed to the global construction industry. Our team collaborates closely with you to understand your needs and goals, translating them into exceptional results that exceed expectations. 
+
+            </p>
+          </div>
+
+          <a
+            href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+            className="a_link"
+          >
+            {" "}
+            <button>get quote now</button>
+          </a>
+        </div>
+      </div>
+
       <div className="about_our_service">
         <div className="about_our_service_content">
-          <h3>About our service</h3>
+          <h3>About Our Services</h3>
           <p>
-            Curabitur molestie sit amet urna at euismod. In non vulputate urna.
-            Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur
-            lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus.
-            Aenean varius vehicula enim, ac pulvinar nulla dapibus ac. Cras
-            vehicula diam elit, faucibus pharetra ante dictum eget. Donec non
-            consequat mi, ac porta mi. Sed metus lectus, commodo eu pretium nec,
-            tempor id orci. Orci varius natoque penatibus et magnis dis
-            parturient montes nascetur ridiculus mus. Aenean egestas quam eu ex
-            eleifend, id varius tellus lacinia. Morbi quis venenatis felis.
-            Suspendisse potenti. In vitae consequat mauris. Donec ornare
-            volutpat tellus.
+          We provide various engineering solutions for the construction sector. We provide Virtual Construction, BIM Modelling, Structural Analysis & Design, Structural Steel Detailing, Rebar Detailing, Building Services, Infrastructure Utilities, CAD Drafting, Quantity Take-Off, Pre-bid Services and Feasibility Reports. In addition, we offer MEP (Mechanical, Electrical, and Plumbing) design services, which include HVAC, plumbing, electrical, ELV, and lifts. We are dedicated to providing true, high-quality services on time, and our team of competent experts strives to establish long-term partnerships based on trust, honesty, and respect. 
+
           </p>
         </div>
         <div className="about_our_service_image">
@@ -69,11 +104,10 @@ function Services() {
 
       <div className="offers_container_box">
         <div className="what_offer">
-          <h3>What we Offer</h3>
+          <h3>What we offer</h3>
           <p>
-            Curabitur molestie sit amet urna at euismod. In non vulputate urna.
-            Nam faucibus est eu lacus ornare, ut cursus massa semper. Curabitur
-            lorem lacus, placerat ut fermentum sit amet, egestas sit amet metus
+          Decisive Engineering aim to facilitate seamless project execution, enhance efficiency, and ensure high-quality results for clients across various industries and project scales.
+
           </p>
           <div className="divider"></div>
         </div>
@@ -82,7 +116,7 @@ function Services() {
           {/* Define the tabs with click handlers to set showTab */}
           <div className="offers">
             <div className="offers_name">
-              <h3>BIM - ARCHITECTURAL</h3>
+              <h3>Virtual Construction</h3>
               {showTab === 1 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -106,7 +140,7 @@ function Services() {
             )}
 
             <div className="offers_name">
-              <h3>Structural Engineering</h3>
+              <h3> Structural Engineering Services</h3>
               {showTab === 2 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -129,7 +163,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3>MEP Engineering</h3>
+              <h3>MEP Engineering Services</h3>
               {showTab === 3 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -152,7 +186,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3>Support Services</h3>
+              <h3> Support Services</h3>
               {showTab === 4 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -191,7 +225,7 @@ function Services() {
         <div className="offers_container" id="res_offer">
           <div className="offers">
             <div className="offers_name">
-              <h3> BIM - ARCHITECTURAL</h3>
+              <h3>  Virtual Construction</h3>
               {showTab === 1 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -218,7 +252,7 @@ function Services() {
             )}
 
             <div className="offers_name">
-              <h3> BIM - STRUCTURAL</h3>
+              <h3> Structural Engineering Services</h3>
               {showTab === 2 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -245,7 +279,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3> BIM - MEP</h3>
+              <h3> MEP Engineering Services</h3>
               {showTab === 3 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -271,7 +305,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3> Infrastructure Model</h3>
+              <h3> Support Services</h3>
               {showTab === 4 ? (
                 <LiaAngleUpSolid
                   className="icon"
