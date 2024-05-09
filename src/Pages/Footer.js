@@ -29,12 +29,12 @@ function Footer() {
           </div>
           <div className="contact_detail_container">
             <div className="nav-Container">
-            <Link to="/" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Home</p></Link>
-            <Link to="/service" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Our services</p></Link>
-            <Link to="/about" style={{textDecoration:"none",color:"#fff"}}><p className='links'>About Us</p></Link>
-            <Link to="/contact" style={{textDecoration:"none",color:"#fff"}}><p className='links'>Contact Us</p></Link>
+           <p className='links'> <Link to="/" style={{textDecoration:"none",color:"#fff",}}>Home</Link></p>
+            <p className='links'><Link to="/service" style={{textDecoration:"none",color:"#fff"}}>Our services</Link></p>
+           <p className='links'> <Link to="/about" style={{textDecoration:"none",color:"#fff"}}>About Us</Link></p>
+           <p className='links'> <Link to="/contact" style={{textDecoration:"none",color:"#fff"}}>Contact Us </Link></p>
               <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">Get quote now</a>
-            <Link to="/"  onClick={handleScrollToTop} style={{textDecoration:"none",color:"#fff"}}><p className='links'>Back to Top</p></Link>
+           <p className='links'><Link to="/"  onClick={handleScrollToTop} style={{textDecoration:"none",color:"#fff"}}>Back to Top </Link></p>
             </div>
 
             <div className="contact-Container">

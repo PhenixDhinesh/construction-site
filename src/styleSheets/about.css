@@ -27,6 +27,7 @@
 }
 .about_container_box>.about_image>.ladder_image{
   width:80vw;
+
   border-radius:10px;
 }
 .vision_container{
@@ -99,6 +100,7 @@ font-size:16px;
     }
 .about_container_box>.about_image>.ladder_image{
   width:85vw;
+  border-radius:5px;
 }
 .vision_container_box{
      height:auto;
@@ -110,7 +112,7 @@ font-size:16px;
 
 }
 .vision_container_box>.vision,.vision_container_box>.mission{
-    width:90vw;
+    width:80vw;
     display: flex;
     align-items: flex-start;
     flex-direction: column;

@@ -138,7 +138,8 @@ export default function Header() {
 
   return (
     <div>
-      <header className="header">
+<div className="header-part">
+<header className="header">
         <div className="logo_sec">
           <img src={logo} alt="" />
         </div>
@@ -228,6 +229,8 @@ export default function Header() {
           {drawerList}
         </Drawer>
       </header>
+</div>
+
 
       <div className="banner">
         {/* <img src={banner} className="banner_img" alt="" /> */}

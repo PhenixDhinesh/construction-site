@@ -80,11 +80,14 @@
   width: 100vw;
   background-color: #f7f7f7;
   padding: 5rem 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .contact_details_container_box {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap:7rem;
 }
 .contact_icon,
 .contact_detail {
