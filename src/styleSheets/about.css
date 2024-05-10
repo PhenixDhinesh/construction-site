@@ -9,16 +9,18 @@
     gap:3rem;
 }
 .about_banner {
-    width:100%;
-    display: none;
+    background-size: cover; /* or 'contain' */
+    background-repeat: no-repeat; /* Correct property value */
+    background-position: center;
     position: relative;
     background-image:url('../assets/about_banner.svg') ;
   }
   .about_res_banner{
     background-image: url("../assets/about_res_banner.svg");
-    width:100%;
-    background-size:100%;
     background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    display: none;
   
   }
 .about_container_box>h3, .vision_container_box>.vision>h3,.vision_container_box>.mission>h3{
@@ -111,6 +113,13 @@
     .about_container_box>p{
 font-size:16px;
     }
+    .about_banner {
+       display:none      }
+      .about_res_banner{
+       
+        display: block;
+      
+      }
 .about_container_box>.about_image>.ladder_image{
   width:85vw;
   border-radius:5px;

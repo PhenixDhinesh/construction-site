@@ -140,19 +140,19 @@ button,.a_link  {
 button,.a_link :hover{
   cursor: pointer;
 }
+
 .banner {
-  width:100vw;
-  position: relative;
-  background-image:url('../assets/banner.svg') ;
+  background-image: url('../assets/home_banner.svg');
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat; /* Correct property value */
+  background-position: center; /* Centers the image */
 }
+
 .res_banner{
   background-image: url("../assets/res_banner.svg");
   display: none;
-  width:100%;
-  background-size:100%;
   background-repeat: no-repeat; 
-  /* Stretch the image to fit the element's dimensions */
-
+  background-size: cover; 
 }
 .content {
   padding: 7rem 50px;
@@ -407,10 +407,10 @@ button,.a_link :hover{
 }
 @keyframes scroll {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 .animation_scroll > div {
@@ -797,7 +797,10 @@ button,.a_link :hover{
 }
 .footer_logo_container > img {
   max-width: 100%;
+  margin-left: -1.5rem;
+
 }
+
 .footer_logo > p {
   width: 50vw;
   font-family: "Roboto", sans-serif;

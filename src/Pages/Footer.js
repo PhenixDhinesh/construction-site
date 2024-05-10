@@ -7,7 +7,7 @@ function Footer() {
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0, 
-      behavior: 'smooth', // Smooth scrolling to the top
+      behavior: 'smooth', 
     });
   };
   const showInMapClicked = () => {
@@ -34,7 +34,7 @@ function Footer() {
            <p className='links'> <Link to="/about" style={{textDecoration:"none",color:"#fff"}}>About Us</Link></p>
            <p className='links'> <Link to="/contact" style={{textDecoration:"none",color:"#fff"}}>Contact Us </Link></p>
               <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">Get quote now</a>
-           <p className='links'><Link to="/"  onClick={handleScrollToTop} style={{textDecoration:"none",color:"#fff"}}>Back to Top </Link></p>
+           <p className='links' onClick={handleScrollToTop}>Back to Top</p>
             </div>
 
             <div className="contact-Container">

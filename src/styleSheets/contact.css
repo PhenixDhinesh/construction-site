@@ -14,16 +14,19 @@
 }
 
 .contact_banner {
-  width:100%;
-  display: none;
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat; /* Correct property value */
+  background-position: center;
   position: relative;
   background-image:url('../assets/contact_banner.svg') ;
 }
 .contact_res_banner{
-  background-image: url("../assets/contact_res_banner.svg");
-  width:100%;
-  background-size:100%;
-  background-repeat: no-repeat; 
+    background-image: url("../assets/contact_res_banner.svg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+  display: none;
+
 
 }
 .map_image > .location_map {
@@ -151,6 +154,13 @@
   .contact_container_box {
     padding: 3rem 30px;
   }
+
+.contact_banner {
+display: none;
+}
+.contact_res_banner{
+  display: block;
+}
   .map_image {
     width: 100vw;
     height:20vh ;
@@ -187,4 +197,5 @@
   .contact_container {
     gap: 1rem;
   }
+
 }
