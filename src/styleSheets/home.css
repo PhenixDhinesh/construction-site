@@ -293,7 +293,13 @@ button,.a_link :hover{
   font-family: "Roboto", sans-serif;
   line-height: 17.58px;
 }
-
+@media (max-width: 560px) {
+  .achivements {
+    display: grid;
+    grid-template-columns: 11rem auto auto;
+    justify-items: start;
+  }
+}
 
 @media (min-width: 560px) and (max-width:960px){
   .achivement_container {
@@ -333,7 +339,7 @@ button,.a_link :hover{
 }
 @media (max-width: 560px){
   .achivement_container {
-    padding: 5rem 30px !important;
+    padding: 7rem 30px  !important;
     height: 430px;
     gap:0 !important;
     flex-direction: column;
@@ -345,7 +351,7 @@ button,.a_link :hover{
   
   }
   .achivements {
-    grid-template-columns: 3.4rem auto auto;
+    grid-template-columns: 5.3rem auto auto;
   }
   .achivement_container > .text > p {
     font-size:12px !important;
@@ -355,6 +361,7 @@ button,.a_link :hover{
     height: 45px;
    
   }
+
   .achivements > .counts {
     grid-area: 1/2/2/4;
     justify-content: start;
@@ -458,6 +465,10 @@ button,.a_link :hover{
   .virtual_construction_cards {
     overflow-x: auto;
     gap: 3rem;
+
+  }
+  #first_card{
+    padding-left:30px;
   }
   .virtual_construction_box {
     gap:4rem;
@@ -466,6 +477,7 @@ button,.a_link :hover{
     display: flex;
    flex-direction: column; 
    padding-right:0 !important;
+   padding-left:0 !important;
 
  }
 
@@ -473,6 +485,7 @@ button,.a_link :hover{
 @media (max-width: 560px){
   .virtual_construction_cards {
     gap: 0.1rem !important;
+
   }
 
   .virtual_construction_title > h3{
@@ -481,7 +494,7 @@ button,.a_link :hover{
   .virtual_construction_box {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 0px;
     gap:2rem;
     padding-right:0 !important;
   }
@@ -489,16 +502,21 @@ button,.a_link :hover{
 @media (max-width: 768px) {
   .virtual_construction_title {
     align-items: flex-start ;
+    padding:0 30px;
   }
   .virtual_construction_contianer {
     /* height: 800px; */
     padding: 5rem 0px;
   }
+  #first_card{
+    padding-left:30px;
+  }
 .virtual_construction_box {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
   padding-right:0 !important;
+  padding-left: 0px;
+
 }
 
   .virtual_construction_title > P {
@@ -708,10 +726,17 @@ button,.a_link :hover{
 }
 .client_words {
   padding-right:0 ;
+  padding-left:0 ;
+  overflow-x: auto;
+
 }
 .client_words_container > h3{
   text-align: center !important;
   font-size: 28px;
+}
+.first_card{
+  padding-left:30px;
+  width:330px;
 }
 }
 @media (max-width: 1200px){
@@ -731,15 +756,21 @@ button,.a_link :hover{
   text-align: left !important;
   font-size: 28px;
 }
+
 }
-@media  (max-width: 800px){
+@media (min-width:320px) and (max-width: 800px){
   .client_container {
     overflow-x: auto !important;
     gap: 2rem !important;
 
   }
-
-
+.first_card{
+  padding-left:30px;
+  width:280px;
+}
+.client_words_container{
+  padding-left:30px;
+}
   .client_words_container > h3{
     text-align: center;
     font-size: 28px;
@@ -754,7 +785,7 @@ button,.a_link :hover{
   font-size: 12px !important;
  }
 .client_words{
-  padding: 4rem 0 4rem 30px;
+  padding: 4rem 0 4rem 0px;
   gap:2rem;
 }
   

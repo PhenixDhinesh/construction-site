@@ -33,7 +33,7 @@ function About() {
         </div>
       </div>
 
-      <div className="about_res_banner" style={{marginTop:"7.5"}}>
+      <div className="about_res_banner" style={{marginTop:"8rem"}}>
         <div className="content">
           <div className="content_text">
             <h3>

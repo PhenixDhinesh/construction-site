@@ -67,7 +67,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="service_res_banner" style={{marginTop:"7.5rem"}}>
+      <div className="service_res_banner" style={{marginTop:"8rem"}}>
         <div className="content">
           <div className="content_text">
             <h3>

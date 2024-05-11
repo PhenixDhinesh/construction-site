@@ -41,7 +41,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="contact_res_banner" style={{marginTop:"7.5"}}>
+      <div className="contact_res_banner" style={{marginTop:"8rem"}}>
         <div className="content">
           <div className="content_text">
             <h3>

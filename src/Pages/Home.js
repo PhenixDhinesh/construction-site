@@ -22,7 +22,7 @@ export default function Home() {
     <div>
     <Header/>
 
-    <div className="banner" style={{marginTop:"8"}}>
+    <div className="banner" style={{marginTop:"8rem"}}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="res_banner">
+      <div className="res_banner" style={{marginTop:"8rem"}}>
         <div className="content">
           <div className="content_text">
             <h3>
@@ -129,7 +129,7 @@ export default function Home() {
             </p>
           </div>
           <div className="virtual_construction_cards">
-            <div class="card" >
+            <div class="card" id="first_card">
               <img class="card-img-top" src={site} alt="" />
               <div class="card-body">
                 <h5 class="card-title">Virtual construction</h5>
@@ -206,7 +206,7 @@ export default function Home() {
           </div>
 
           <div className="client_container">
-            <div className="card" id="card__contain">
+            <div className="card first_card">
               <div className="clients_grid">
                 <img src={client1} alt="" />
                 <h3>raju ram</h3>
