@@ -8,6 +8,10 @@
   scrollbar-width: none;
 
 }
+h3{
+  margin-top:0;
+  margin-bottom:0;
+}
 body{
   font-family: 'Inter', sans-serif;
 }
@@ -18,6 +22,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 .toggle_icon {
   width: 28px;
@@ -64,11 +69,11 @@ cursor: pointer;
   border-radius: 1px 1px 0 0;
   position: absolute;
   z-index:1000;
-  top:5rem;
+  top:8rem;
   right:25rem;
   background: #F7F7F7;
   flex-direction: column;
-  padding:15px 10px;
+  padding:12px 0px 0 0px;
 }
 
 
@@ -95,13 +100,17 @@ align-items: center;
 .service_container > .services{
 display:flex;
 justify-content: space-between;
-padding:10px 20px;
+padding:10px 15px;
 align-items: center;
+}
+.service_container > .services > Link{
+  margin-top:0;
 }
 .service_container > .services >h3{
   font-size: 14px;
   font-weight:500;
   line-height: 16.94px;
+  margin-top: 0 ;
   color:#000000;
   font-family: 'Inter',sans-serif;
   text-transform: capitalize;
@@ -125,6 +134,7 @@ align-items: center;
 .off_service{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap:10px;
 }
 button,.a_link  {
@@ -145,7 +155,9 @@ button,.a_link :hover{
   background-image: url('../assets/home_banner.svg');
   background-size: cover; /* or 'contain' */
   background-repeat: no-repeat; /* Correct property value */
-  background-position: center; /* Centers the image */
+  background-position: center;
+  position: relative;
+  height:600px;
 }
 
 .res_banner{
@@ -254,7 +266,7 @@ button,.a_link :hover{
 }
 .achivements {
   display: grid;
-  grid-template-columns: 4.5rem auto auto;
+  grid-template-columns: 7rem auto auto;
   justify-items: start;
 }
 .achivements .box {
@@ -685,6 +697,8 @@ button,.a_link :hover{
   gap: 2.2rem;
   overflow-x: auto;
   scrollbar-width: none;
+  align-items: center;
+  justify-items: center;
 
 }
 
@@ -756,7 +770,8 @@ button,.a_link :hover{
 }
 .clients_grid {
   display: grid;
-  grid-template-columns: 4.5rem auto auto;
+  grid-template-columns: 6rem auto auto;
+  gap:1rem;
 }
 .clients_grid > img {
   grid-area: 1/1/3/2;
@@ -764,6 +779,7 @@ button,.a_link :hover{
 .clients_grid > h3 {
   grid-area: 1/2/2/4;
   font-size: 24px;
+  margin: 0 !important;
   text-transform: capitalize;
   font-weight: 500;
   line-height: 30px;
@@ -793,11 +809,15 @@ button,.a_link :hover{
   gap: 1.5rem;
 }
 .footer_logo_container {
-  width: 217px;
+  width: 214px;
+  display: flex ;
+  align-items: flex-start;
+  justify-content: flex-start;
+
 }
-.footer_logo_container > img {
+.footer_logo_container >a {
   max-width: 100%;
-  margin-left: -1.5rem;
+  margin-left:-2.5rem;
 
 }
 

@@ -20,7 +20,8 @@ function Footer() {
         <div className="footer_container">
           <div className="footer_logo">
             <div className="footer_logo_container">
-            <img src={whiteLogo} alt="" />
+            <a href="https://www.decisiveengg.com/" target="blank"><img src={whiteLogo} alt="" /></a>
+
             </div>
             <p>
               Integer in est elit. Mauris placerat blandit massa quis aliquam.
@@ -65,7 +66,7 @@ function Footer() {
               <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
             </div>
             <div className="powered_container">
-            <a href="www.bluice.in"> <img src={poweredBy} alt="" /></a>
+            <a href="https://www.bluice.in/"> <img src={poweredBy} alt="" /></a>
 
             </div>
           </div>

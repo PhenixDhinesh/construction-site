@@ -22,7 +22,7 @@ export default function Home() {
     <div>
     <Header/>
 
-    <div className="banner">
+    <div className="banner" style={{marginTop:"8"}}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
@@ -225,8 +225,9 @@ export default function Home() {
             <div className="card" id="card__contain">
               <div className="clients_grid">
                 <img src={client2} alt="" />
-                <h3>Nadarajan</h3>
                 <p>Member, NRT Apartments</p>
+                <h3>Nadarajan</h3>
+
               </div>
               <div className="card-body">
                 <p className="about_client">

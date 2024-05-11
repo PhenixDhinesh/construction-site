@@ -23,7 +23,6 @@ export default function Header() {
     e.stopPropagation();
     setShowServicesDropdown(!showServicesDropdown);
   };
-  
 
   const timerRef = useRef(null);
 
@@ -47,16 +46,19 @@ export default function Header() {
           <h2>Menu</h2>
           <div className="offcanvas_lists">
             <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}> Home </p></ListItem>
+              <ListItem onClick={toggleDrawer(false)}>
+                <p style={{ fontSize: "16px" }}> Home </p>
+              </ListItem>
             </Link>
             <ListItem onClick={toggleServicesDropdown} className="off_service">
-              <p>Our Service</p>
-
-              {showServicesDropdown ? (
-                <LiaAngleUpSolid /> // Display up arrow if true
-              ) : (
-                <LiaAngleDownSolid /> // Display down arrow if false
-              )}
+              <p style={{ fontSize: "16px" }}>Our Service</p>
+              <div style={{ marginTop: "-4px" }}>
+                {showServicesDropdown ? (
+                  <LiaAngleUpSolid /> // Display up arrow if true
+                ) : (
+                  <LiaAngleDownSolid /> // Display down arrow if false
+                )}
+              </div>
             </ListItem>
             {showServicesDropdown && (
               <div className="Off_service_container">
@@ -122,13 +124,17 @@ export default function Header() {
             )}
             <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
               {" "}
-              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}>About us</p></ListItem>
+              <ListItem onClick={toggleDrawer(false)}>
+                <p style={{ fontSize: "16px" }}>About us</p>
+              </ListItem>
             </Link>
             <Link
               to="/contact"
               style={{ textDecoration: "none", color: "#000" }}
             >
-              <ListItem onClick={toggleDrawer(false)}><p style={{fontSize:"16px"}}>Contact us</p></ListItem>
+              <ListItem onClick={toggleDrawer(false)}>
+                <p style={{ fontSize: "16px" }}>Contact us</p>
+              </ListItem>
             </Link>
           </div>
         </List>
@@ -138,101 +144,106 @@ export default function Header() {
 
   return (
     <div>
-<div className="header-part">
-<header className="header">
-        <div className="logo_sec">
-          <a href="www.decisiveengg.com" target="blank"><img src={logo} alt="" /></a>
-        </div>
-        <div className="nav_sec">
-          <nav className="nav_link">
-            <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
-              <p className="links">Home</p>
-            </Link>
-            <div
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <p>Our services</p>
-              {showBox && (
-                <div className="service_container">
-                  <div className="services">
-                    <Link
-                      to="/service"
-                      style={{ textDecoration: "none", color: "#000" }}
-                    >
-                      <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
-                        virtula construction
-                      </h3>
-                    </Link>
-                    <FaAngleRight />
+      <div className="header-part">
+        <header
+          className="header navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target navbar-fixed-top"
+          id="ftco-navbar"
+        >
+          <div className="logo_sec">
+            <a href="https://www.decisiveengg.com/" target="blank">
+              <img src={logo} alt="" />
+            </a>
+          </div>
+          <div className="nav_sec">
+            <nav className="nav_link">
+              <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+                <p className="links">Home</p>
+              </Link>
+              <div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <p style={{fontWeight:"600"}}>Our services</p>
+                {showBox && (
+                  <div className="service_container">
+                    <div className="services">
+                      <Link
+                        to="/service"
+                        style={{ textDecoration: "none", color: "#000" }}
+                      >
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                          virtula construction
+                        </h3>
+                      </Link>
+                      <FaAngleRight />
+                    </div>
+                    <div className="services">
+                      <Link
+                        to="/service"
+                        style={{ textDecoration: "none", color: "#000" }}
+                      >
+                        {" "}
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                          structural engineering service
+                        </h3>
+                      </Link>
+                      <FaAngleRight />
+                    </div>
+                    <div className="services">
+                      <Link
+                        to="/service"
+                        style={{ textDecoration: "none", color: "#000" }}
+                      >
+                        {" "}
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                          MEP engineering service
+                        </h3>
+                      </Link>
+                      <FaAngleRight />
+                    </div>
+                    <div className="services">
+                      <Link
+                        to="/service"
+                        style={{ textDecoration: "none", color: "#000" }}
+                      >
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                          support service
+                        </h3>
+                      </Link>
+                      <FaAngleRight />
+                    </div>
                   </div>
-                  <div className="services">
-                    <Link
-                      to="/service"
-                      style={{ textDecoration: "none", color: "#000" }}
-                    >
-                      {" "}
-                      <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
-                        structural engineering service
-                      </h3>
-                    </Link>
-                    <FaAngleRight />
-                  </div>
-                  <div className="services">
-                    <Link
-                      to="/service"
-                      style={{ textDecoration: "none", color: "#000" }}
-                    >
-                      {" "}
-                      <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
-                        MEP engineering service
-                      </h3>
-                    </Link>
-                    <FaAngleRight />
-                  </div>
-                  <div className="services">
-                    <Link
-                      to="/service"
-                      style={{ textDecoration: "none", color: "#000" }}
-                    >
-                      <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
-                        support service
-                      </h3>
-                    </Link>
-                    <FaAngleRight />
-                  </div>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
 
-            <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                {" "}
+                <p>About us</p>
+              </Link>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                {" "}
+                <p>Contact us</p>
+              </Link>
+            </nav>
+            <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
               {" "}
-              <p>About us</p>
-            </Link>
-            <Link
-              to="/contact"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              {" "}
-              <p>Contact us</p>
-            </Link>
-          </nav>
-          <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
-            {" "}
-            <button>get quote now</button>
-          </a>
-        </div>
-        <div className="toggle_icon">
-          <img src={menu} alt="" onClick={toggleDrawer(true)} />
-        </div>
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-          {drawerList}
-        </Drawer>
-      </header>
-</div>
-
-
-     
+              <button>get quote now</button>
+            </a>
+          </div>
+          <div className="toggle_icon">
+            <img src={menu} alt="" onClick={toggleDrawer(true)} />
+          </div>
+          <Drawer open={open} onClose={toggleDrawer(false)}>
+            {drawerList}
+          </Drawer>
+        </header>
+      </div>
     </div>
   );
 }

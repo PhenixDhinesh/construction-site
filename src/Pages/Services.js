@@ -43,7 +43,8 @@ function Services() {
     <div>
       <Header />
 
-      <div className="service_banner">
+
+      <div className="service_banner" style={{marginTop:"8rem"}}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
@@ -66,7 +67,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="service_res_banner">
+      <div className="service_res_banner" style={{marginTop:"7.5rem"}}>
         <div className="content">
           <div className="content_text">
             <h3>

@@ -17,7 +17,7 @@
   background-size: cover; /* or 'contain' */
   background-repeat: no-repeat; /* Correct property value */
   background-position: center;
-  position: relative;
+  height:600px; /* Centers the image */
   background-image:url('../assets/contact_banner.svg') ;
 }
 .contact_res_banner{
@@ -188,7 +188,7 @@ display: none;
     font-size: 26px;
   }
   .contact_detail > p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .contact_icon_box {
     width: 40px;

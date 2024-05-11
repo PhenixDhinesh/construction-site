@@ -11,7 +11,7 @@ function About() {
     <div>
       <Header/>
 
-      <div className="about_banner">
+      <div className="about_banner" style={{marginTop:"8rem"}}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
@@ -33,7 +33,7 @@ function About() {
         </div>
       </div>
 
-      <div className="about_res_banner">
+      <div className="about_res_banner" style={{marginTop:"7.5"}}>
         <div className="content">
           <div className="content_text">
             <h3>
