@@ -11,13 +11,44 @@ import client2 from "../assets/client2.svg";
 import client3 from "../assets/client3.svg";
 import client4 from "../assets/client4.svg";
 import Header from "./Header";
+import { gsap } from 'gsap';
+
 import Footer from "./Footer";
+import { Tween } from 'react-gsap';
+
 
 export default function Home() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
   }, []);
+
+  // useEffect(() => {
+  //   const speed = 50; // (in pixels per second)
+
+  //   const lines = document.querySelectorAll(".animation_scroll > div"),
+  //     tl = horizontalLoop(lines, { speed: speed, reversed: true, repeat: -1 });
+
+  //     function horizontalLoop(elements, options) {
+  //       const tl = gsap.timeline(options);
+  //       const containerWidth = elements[0].parentElement.offsetWidth;
+      
+  //       // tl.to(elements, { x: `-=${containerWidth}`, duration: containerWidth / options.speed, ease: "none" });
+  //   // gsap.to(lines, { x: "100%", duration: 2, repeat: -1, ease: "none" });
+
+  //   lines.forEach((line, index) => {
+  //     gsap.to(line, { x: "-100%", duration: 2, repeat: -1, ease: "none", delay: index  });
+  //   });
+    
+  //       tl.eventCallback("onComplete", () => {
+  //         tl.restart();
+  //       });
+      
+      
+
+  //     return tl;
+  //   }
+  // }, []);
   return (
     <div>
     <Header/>

@@ -8,7 +8,7 @@ import ListItem from "@mui/material/ListItem";
 import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
 
 import logo from "../assets/DE logo1 2.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [showBox, setShowBox] = useState(false);
@@ -38,21 +38,23 @@ export default function Header() {
       setShowBox(false);
     }, 200); // Adjust delay as needed
   };
-
+  const location =useLocation();
+  const currentpath = location.pathname;
+  const isActive = (path)=>currentpath === path
   const drawerList = (
     <Box sx={{ width: 300 }} role="presentation">
       <div className="offcanvas_container">
         <List>
           <h2>Menu</h2>
           <div className="offcanvas_lists">
-            <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+            <Link to="/" className={`${isActive('/')? 'activeLink' : 'canvasLink'}`}>
               <ListItem onClick={toggleDrawer(false)}>
                 <p style={{ fontSize: "16px" }}> Home </p>
               </ListItem>
             </Link>
-            <ListItem onClick={toggleServicesDropdown} className="off_service">
+            <ListItem onClick={toggleServicesDropdown} className={`${isActive('/service')? 'activeLink' : 'off_service'}`}>
               <p style={{ fontSize: "16px" }}>Our Service</p>
-              <div style={{ marginTop: "-4px" }}>
+              <div style={{ marginTop: "-4px",marginLeft:"10px" }}>
                 {showServicesDropdown ? (
                   <LiaAngleUpSolid /> // Display up arrow if true
                 ) : (
@@ -122,7 +124,7 @@ export default function Header() {
                 </ListItem>
               </div>
             )}
-            <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
+            <Link to="/about" className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}>
               {" "}
               <ListItem onClick={toggleDrawer(false)}>
                 <p style={{ fontSize: "16px" }}>About us</p>
@@ -130,7 +132,7 @@ export default function Header() {
             </Link>
             <Link
               to="/contact"
-              style={{ textDecoration: "none", color: "#000" }}
+              className={`${isActive('/contact')? 'activeLink' : 'canvasLink'}`}
             >
               <ListItem onClick={toggleDrawer(false)}>
                 <p style={{ fontSize: "16px" }}>Contact us</p>
@@ -156,14 +158,14 @@ export default function Header() {
           </div>
           <div className="nav_sec">
             <nav className="nav_link">
-              <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+              <Link to="/" className={`${isActive('/')? 'activeLink' : 'canvasLink'}`}>
                 <p className="links">Home</p>
               </Link>
               <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <p style={{fontWeight:"600"}}>Our services</p>
+                <p  className={`${isActive('/service')? 'activeLink' : 'canvasLink'}`}>Our services</p>
                 {showBox && (
                   <div className="service_container">
                     <div className="services">
@@ -218,14 +220,14 @@ export default function Header() {
 
               <Link
                 to="/about"
-                style={{ textDecoration: "none", color: "#000" }}
+                className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}
               >
                 {" "}
                 <p>About us</p>
               </Link>
               <Link
                 to="/contact"
-                style={{ textDecoration: "none", color: "#000" }}
+                className={`${isActive('/contact')? 'activeLink' : 'canvasLink'}`}
               >
                 {" "}
                 <p>Contact us</p>
@@ -239,7 +241,7 @@ export default function Header() {
           <div className="toggle_icon">
             <img src={menu} alt="" onClick={toggleDrawer(true)} />
           </div>
-          <Drawer open={open} onClose={toggleDrawer(false)}>
+          <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
             {drawerList}
           </Drawer>
         </header>
