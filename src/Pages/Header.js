@@ -41,7 +41,7 @@ export default function Header() {
   const currentpath = location.pathname;
   const isActive = (path)=>currentpath === path
   const drawerList = (
-    <Box role="presentation">
+    <Box sx={{ width: 300 }} role="presentation">
       <div className="offcanvas_container">
         <List>
           <h2>Menu</h2>
