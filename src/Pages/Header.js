@@ -6,8 +6,7 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
-
-import logo from "../assets/DE logo1 2.svg";
+import logo from "../assets/DE_logo clr.svg";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -42,7 +41,7 @@ export default function Header() {
   const currentpath = location.pathname;
   const isActive = (path)=>currentpath === path
   const drawerList = (
-    <Box sx={{ width: 300 }} role="presentation">
+    <Box role="presentation">
       <div className="offcanvas_container">
         <List>
           <h2>Menu</h2>
@@ -233,10 +232,13 @@ export default function Header() {
                 <p>Contact us</p>
               </Link>
             </nav>
+            <div>
             <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
               {" "}
               <button>get quote now</button>
             </a>
+            </div>
+           
           </div>
           <div className="toggle_icon">
             <img src={menu} alt="" onClick={toggleDrawer(true)} />

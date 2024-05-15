@@ -31,6 +31,8 @@ body{
 }
 .nav_sec {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 @media (max-width: 560px) {
@@ -60,6 +62,7 @@ body{
 
 }
 .activeLink{
+  font-weight: bold;
   color:var(--main-color);
   text-decoration: none;
 
@@ -135,14 +138,27 @@ align-items: center;
 .service_container > .services >h3:hover{
   cursor: pointer;
 }
+@media (max-width: 560px){
+
+  .Off_service_container{
+    width:230px;
+    height:201px;
+    border-radius: 1px 1px 0 0;
+    display: flex;
+    z-index:1000;
+    background: #F7F7F7;
+    flex-direction: column;
+    padding:15px 10px;
+  }
+}
 .offcanvas_container{
-  padding:2rem 1rem;
+  padding:2rem 2.5rem;
 }
 .offcanvas_lists{
-  margin-top:2rem;
   display: flex;
   flex-direction: column;
   gap:1rem;
+  padding:20px 0px;
 
 }
 .offcanvas_lists:hover{
@@ -167,7 +183,13 @@ button,.a_link  {
 button,.a_link :hover{
   cursor: pointer;
 }
+.logo_sec{
+  width:180px;
 
+}
+.logo_sec > a {
+max-width:100%;
+}
 .banner {
   background-image: url('../assets/home_banner.svg');
   background-size: cover; /* or 'contain' */
@@ -209,6 +231,19 @@ button,.a_link :hover{
   line-height: 23.44px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}@media (max-width: 1200px){
+  .content_text > h3 {
+    font-size: 48px;
+    width:70vw;
+  }
+  .content_text > p {
+    font-size: 20px;
+    width:70vw;
+    text-align: justify;
+    line-height: 23.44px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
 }
 .a_link{
   display: flex;
@@ -232,11 +267,9 @@ button,.a_link :hover{
   }
   .content_text > h3 {
     font-size: 28px;
-    width:300px;
   }
   .content_text > p {
     font-size: 14px;
-    width:280px !important;
 
   }
   .content {
@@ -252,8 +285,6 @@ button,.a_link :hover{
 
 .achivement_container {
   padding: 10rem 50px;
-  /* margin-top: 40rem; */
-  height: 178px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -310,32 +341,24 @@ button,.a_link :hover{
   font-family: "Roboto", sans-serif;
   line-height: 17.58px;
 }
-@media (max-width: 560px) {
-  .achivements {
-    display: grid;
-    grid-template-columns: 11rem auto auto;
-    justify-items: start;
-  }
-}
 
-@media (min-width: 560px) and (max-width:960px){
+@media (min-width: 560px) and (max-width:1200px){
   .achivement_container {
-    padding: 5rem 30px !important;
-    height: 430px;
-    gap:3rem !important;
+    padding: 7rem 50px;
+    gap:5rem;
     flex-direction: column;
     align-items:flex-start;
   }
 
   .achivement_container > .text > h3 {
-    font-size: 36px !important;
+    font-size: 36px;
   
   }
   .achivements {
-    grid-template-columns: 4.5rem auto auto;
+    grid-template-columns: 7rem auto auto;
   }
   .achivement_container > .text > p {
-    font-size:16px !important;
+    font-size:18px;
   }
   .achivements .box {
     width: 60px;
@@ -348,17 +371,21 @@ button,.a_link :hover{
     text-align: left;
   }
   .achivements > .about {
-    font-size: 14px !important;
+    font-size: 16px;
   }
   .achivement_grid {
-    gap: 2rem;
+    gap: 4rem;
   }
 }
-@media (max-width: 560px){
+@media (min-width: 320px) and (max-width: 400px){
+  .achivements {
+    display: grid;
+    grid-template-columns: 4rem auto auto;
+    justify-items: start;
+  }
   .achivement_container {
-    padding: 7rem 30px  !important;
-    height: 430px;
-    gap:0 !important;
+    padding: 7rem 0px 7rem 30px ;
+    gap:3rem;
     flex-direction: column;
     align-items:flex-start;
   }
@@ -368,7 +395,7 @@ button,.a_link :hover{
   
   }
   .achivements {
-    grid-template-columns: 5.3rem auto auto;
+    grid-template-columns: 5rem auto;
   }
   .achivement_container > .text > p {
     font-size:12px !important;
@@ -390,6 +417,57 @@ button,.a_link :hover{
   .achivement_grid {
     gap: 1rem;
   }
+}
+@media  (min-width: 400px) and (max-width: 560px){
+  .achivement_container {
+    padding: 7rem 30px  !important;
+    gap:3rem;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .achivements {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 5.3rem auto auto;
+  
+  }
+  .achivement_container > .text > h3 {
+    font-size: 28px !important;
+  
+  }
+ 
+  .achivement_container > .text > p {
+    font-size:12px !important;
+  }
+  .achivements .box {
+    width: 45px;
+    height: 45px;
+   
+  }
+
+  .achivements > .counts {
+    grid-area: 1/2/2/4;
+    justify-content: start;
+    text-align: left;
+  }
+  .achivements > .about {
+    font-size: 12px !important;
+  }
+  .achivement_grid {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1200px){
+  .achivement_container > .text > h3 {
+    width:70vw;
+  
+  }
+ 
+  .achivement_container > .text > p {
+    width:70vw;
+
+  }
+
 }
 .core_values_container {
   padding: 5rem 50px;
@@ -858,10 +936,10 @@ button,.a_link :hover{
 .footer_logo {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 .footer_logo_container {
-  width: 214px;
+  width: 150px;
   display: flex ;
   align-items: flex-start;
   justify-content: flex-start;
@@ -869,7 +947,6 @@ button,.a_link :hover{
 }
 .footer_logo_container >a {
   max-width: 100%;
-  margin-left:-2.5rem;
 
 }
 

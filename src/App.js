@@ -8,7 +8,6 @@ import {
   Routes,
 
 } from "react-router-dom";
-import Try from './Pages/Try'
 function App() {
   return (
     <div className="App">
@@ -20,7 +19,6 @@ function App() {
           <Route    path="/contact" element={<ContactUs />}></Route>
         </Routes>
       </Router>
-      {/* <Try/> */}
     </div>
   );
 }

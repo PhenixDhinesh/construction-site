@@ -1,5 +1,5 @@
 import React from 'react'
-import whiteLogo from "../assets/DE logo1 2.svg";
+import whiteLogo from "../assets/DE_logo White.svg";
 import poweredBy from "../assets/BIT.svg";
 import { Link } from 'react-router-dom';
 
