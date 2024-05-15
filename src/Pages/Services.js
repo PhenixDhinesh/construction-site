@@ -13,24 +13,23 @@ function Services() {
   const showContent = [
     {
       content:
-        "Virtual Construction and BIM Services offer a revolutionary approach to the construction industry. By creating digital representations of buildings and infrastructure, this technology enhances visualization, coordination, and communication throughout the entire project lifecycle. With BIM, architectural, structural, and MEP systems are seamlessly integrated into a single model, fostering collaboration and improving project efficiency.",
-      image: "path/to/image1.jpg", // Update with valid image path
+        "Virtual Construction and BIM Services offer a revolutionary approach to the construction industry. By creating digital representations of buildings and infrastructure, this technology enhances visualization, coordination, and communication throughout the entire project lifecycle. With BIM, architectural, structural, and MEP systems are seamlessly integrated into a single model, fostering collaboration and improving project efficiency." ,    
+        image: "path/to/image1.jpg", // Update with valid image path
     },
     {
       content:
-        "When it comes to Structural Engineering Services, our focus is on analyzing and designing structural elements within buildings and infrastructure. We prioritize the stability, strength, and safety of the structure, ensuring that it meets all necessary requirements. Our services encompass structural analysis, detailed design of components such as steel and rebar, as well as the preparation of accurate shop drawings and as-built drawings. ",
-
+        "When it comes to Structural Engineering Services, our focus is on analyzing and designing structural elements within buildings and infrastructure. We prioritize the stability, strength, and safety of the structure, ensuring that it meets all necessary requirements. Our services encompass structural analysis, detailed design of components such as steel and rebar, as well as the preparation of accurate shop drawings and as-built drawings.",
       image: "path/to/image2.jpg",
     },
     {
       content:
-        "MEP Engineering Services play a crucial role in the design and coordination of mechanical, electrical, and plumbing systems within buildings. Our team specializes in creating efficient HVAC systems, electrical distribution networks, plumbing layouts, and fire protection systems. We guarantee that these systems function effectively and meet the specific requirements of each building.",
-      image: "path/to/image3.jpg",
+        "MEP Engineering Services play a crucial role in the design and coordination of mechanical, electrical, and plumbing systems within buildings. Our team specializes in creating efficient HVAC systems, electrical distribution networks, plumbing layouts, and fire protection systems. We guarantee that these systems function effectively and meet the specific requirements of each building.",   
+        image: "path/to/image3.jpg",
     },
     {
       content:
         "We also provide comprehensive Support Services to ensure the success of your project. Our offerings include quantity take-off services for accurate material estimation, model-based quantity take-off for precise quantity calculations, feasibility studies to assess project viability, and value engineering to optimize costs without compromising quality or performance. With our support and expertise, we are committed to guiding you through every step of the project lifecycle.",
-      image: "path/to/image4.jpg",
+              image: "path/to/image4.jpg",
     },
   ];
 
@@ -71,11 +70,10 @@ function Services() {
         <div className="content">
           <div className="content_text">
             <h3>
-            Mastering Every Facet of Construction: Building Solutions Crafted for Your Needs 
-
+            Mastering Every Facet of Construction
             </h3>
             <p>
-            Decisive Engineering offers a full spectrum of Engineering Solutions designed to the global construction industry. Our team collaborates closely with you to understand your needs and goals, translating them into exceptional results that exceed expectations. 
+            Decisive Engineering delivers comprehensive engineering solutions globally, working closely with you to translate your vision into exceptional, industry-leading results.
 
             </p>
           </div>
@@ -94,9 +92,8 @@ function Services() {
         <div className="about_our_service_content">
           <h3>About Our Services</h3>
           <p>
-          We provide various engineering solutions for the construction sector. We provide Virtual Construction, BIM Modelling, Structural Analysis & Design, Structural Steel Detailing, Rebar Detailing, Building Services, Infrastructure Utilities, CAD Drafting, Quantity Take-Off, Pre-bid Services and Feasibility Reports. In addition, we offer MEP (Mechanical, Electrical, and Plumbing) design services, which include HVAC, plumbing, electrical, ELV, and lifts. We are dedicated to providing true, high-quality services on time, and our team of competent experts strives to establish long-term partnerships based on trust, honesty, and respect. 
-
-          </p>
+          Decisive Engineering aim to facilitate seamless project execution, enhance efficiency, and ensure high-quality results for clients across various industries and project scales.
+   </p>
         </div>
         <div className="about_our_service_image">
           <img src="" alt="" />

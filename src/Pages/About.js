@@ -61,8 +61,8 @@ function About() {
         <div className='about_container_box'>
             <h3>About us</h3>
             <p>
-            Decisive is a top engineering solutions supplier with various services, including virtual construction, BIM modelling, structural expertise, building infrastructure systems, documentation, pre-bid and feasibility services. Our professional engineers provide data-rich 3D models, structural analysis, and extensive documentation to help clients make educated decisions. We also give pre-bid and feasibility surveys to assist with project difficulties. Our dedication to cultivating true collaboration and trust is what distinguishes us from others
-               </p>
+            Decisive is a top engineering solutions supplier with various services, including virtual construction, BIM modelling, structural expertise, building infrastructure systems, documentation, pre-bid and feasibility services. Our professional engineers provide data-rich 3D models, structural analysis, and extensive documentation to help clients make educated decisions. We also give pre-bid and feasibility surveys to assist with project difficulties. Our dedication to cultivating true collaboration and trust is what distinguishes us from others.
+              </p>
             <div className='about_image'>
                 <img src={ladder} alt="" className='ladder_image'/>
             </div>
@@ -72,12 +72,14 @@ function About() {
         <div className='vision_container_box'>
         <div className='vision'>
             <h3>vision</h3>
-            <p>   To be the most reliable, innovative partner and solution provider in the global construction Industry.
-  </p>  </div>
+            <p>  To be the most reliable, innovative partner and solution provider in the global construction Industry.
+
+</p>  </div>
         <div className='mission'>
             <h3>mission</h3>
             <p>
             We strongly believe, our future depends on the perfect balance between achieving our targets and the contribution that we can make to the socio-economic and environmental development of the communities
+
 </p>        </div>
         </div>
         
