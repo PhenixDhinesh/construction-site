@@ -1,0 +1,33 @@
+[debug] [2024-05-16T15:55:51.409Z] ----------------------------------------------------------------------
+[debug] [2024-05-16T15:55:51.411Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-05-16T15:55:51.412Z] CLI Version:   13.7.5
+[debug] [2024-05-16T15:55:51.412Z] Platform:      darwin
+[debug] [2024-05-16T15:55:51.412Z] Node Version:  v18.14.0
+[debug] [2024-05-16T15:55:51.413Z] Time:          Thu May 16 2024 21:25:51 GMT+0530 (India Standard Time)
+[debug] [2024-05-16T15:55:51.414Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-16T15:55:51.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-16T15:55:51.490Z] > authorizing via signed-in user (gayathri.parvathavarthini@gmail.com)
+[debug] [2024-05-16T15:55:51.490Z] [iam] checking project construction-site-a909e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-16T15:55:51.493Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/construction-site-a909e:testIamPermissions [none]
+[debug] [2024-05-16T15:55:51.493Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/construction-site-a909e:testIamPermissions x-goog-quota-user=projects/construction-site-a909e
+[debug] [2024-05-16T15:55:51.494Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/construction-site-a909e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-16T15:55:53.167Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/construction-site-a909e:testIamPermissions 200
+[debug] [2024-05-16T15:55:53.168Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/construction-site-a909e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-16T15:55:53.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/construction-site-a909e [none]
+[debug] [2024-05-16T15:55:54.046Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/construction-site-a909e 200
+[debug] [2024-05-16T15:55:54.046Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/construction-site-a909e {"projectId":"construction-site-a909e","projectNumber":"56532317911","displayName":"construction site","name":"projects/construction-site-a909e","resources":{"hostingSite":"construction-site-a909e"},"state":"ACTIVE","etag":"1_a3eb9770-0cb2-40e5-947d-ec835b572938"}
+[info] 
+[info] === Deploying to 'construction-site-a909e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-05-16T15:55:54.053Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/construction-site-a909e/versions [none]
+[debug] [2024-05-16T15:55:54.053Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/construction-site-a909e/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-05-16T15:57:02.744Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/construction-site-a909e/versions 502
+[debug] [2024-05-16T15:57:02.745Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/construction-site-a909e/versions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 502 (Server Error)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>502.</b> <ins>That’s an error.</ins>\n  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>\n"
+[debug] [2024-05-16T15:57:07.752Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:261:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.

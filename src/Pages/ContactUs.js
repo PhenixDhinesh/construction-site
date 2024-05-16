@@ -60,13 +60,13 @@ function ContactUs() {
 
       <div className="contact_container_box">
         <div className="map_image">
-          <iframe
-            className="location_map"
-            src="https://www.google.com/maps/place/11%C2%B041'33.0%22N+77%C2%B058'16.5%22E/@11.6925,77.97125,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.6925!4d77.97125?entry=ttu"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <iframe
+      className="location_map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.105482331914!2d77.96906101478313!3d11.692494391441157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16721abf0ed5%3A0x92c2f8d9b5b5b14e!2s11%C2%B041'33.0%22N%2077%C2%B058'16.5%22E!5e0!3m2!1sen!2sin!4v1620294994719!5m2!1sen!2sin"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
         </div>
       </div>
 
