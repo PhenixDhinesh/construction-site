@@ -1,6 +1,6 @@
 import React from 'react'
 import whiteLogo from "../assets/DE_logo White.svg";
-import poweredBy from "../assets/BIT.svg";
+import poweredBy from "../assets/bluice.svg";
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -53,7 +53,7 @@ function Footer() {
               <p>*Terms and Condition</p>
               <p>*Privacy policy</p>
               <div className="powered_container">
-              <a href="www.bluice.in"> <img src={poweredBy} alt="" /></a>
+              <a href="https://www.bluice.in/" target='blank'> <img src={poweredBy} alt="" /></a>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ function Footer() {
               <p>@2024 Decisive Engineering pvt.ltd. Copyrights received.</p>
             </div>
             <div className="powered_container">
-            <a href="https://www.bluice.in/"> <img src={poweredBy} alt="" /></a>
+            <a href="https://www.bluice.in/" target='blank'> <img src={poweredBy} alt="" /></a>
 
             </div>
           </div>

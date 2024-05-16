@@ -212,7 +212,7 @@ export default function Home() {
         </div>
 
         <div className="client_container">
-          <div className="card first_card">
+          <div className="card first_card" id="card__contain">
             <div className="clients_grid">
               <img src={client1} alt="" />
               <h3>raju ram</h3>

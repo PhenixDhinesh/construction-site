@@ -33,7 +33,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 10rem;
 }
 @media (max-width: 560px) {
   .toggle_icon {
@@ -76,7 +76,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 10rem;
 }
 
 .nav_sec > .nav_link  :hover{
@@ -90,7 +90,7 @@ cursor: pointer;
   position: absolute;
   z-index:1000;
   top:8rem;
-  right:25rem;
+  right:30rem;
   background: #F7F7F7;
   flex-direction: column;
   padding:12px 10px;
@@ -179,7 +179,7 @@ button,.a_link :hover{
   cursor: pointer;
 }
 .logo_sec{
-  width:180px;
+  width:120px;
 
 }
 .logo_sec > a {
@@ -248,7 +248,7 @@ max-width:100%;
 }
 @media (max-width: 560px){
   .header {
-    padding: 20px 20px 20px 10px;
+    padding: 20px 30px;
   
   }
   .res_banner {
@@ -327,6 +327,8 @@ max-width:100%;
   justify-content: start;
   text-align: left;
   color: #714E4E;
+  font-weight: 500;
+  font-size: 16px;
 
 }
 .achivements > .about {
@@ -534,17 +536,15 @@ max-width:100%;
 }
 
 .virtual_construction_contianer {
-  /* margin-top:5rem; */
-  /* height: 1022px; */
   width:100vw;
   background-color: #f7f7f7;
-  padding: 5rem 0px;
+  padding: 5rem 30px;
 }
 
 .virtual_construction_box {
    display: flex;
    flex-direction: column; 
-   padding:0 50px;
+   /* padding:0 50px; */
    gap:5rem;
 }
 
@@ -627,6 +627,9 @@ max-width:100%;
   .card-body > p{
     width:250px !important;
   }
+  #card__contain{
+    width:280px !important;
+  }
 }
 
 .virtual_construction_title {
@@ -651,9 +654,11 @@ max-width:100%;
 .virtual_construction_cards {
   display: grid;
   grid-template-columns:auto auto auto auto;
-  gap: 2.2rem;
+  gap: 1rem;
   overflow-x: auto;
-  align-items: center !important;
+  scrollbar-width: none;
+  align-items: center;
+  justify-items: center;
   scrollbar-width: none;
 
 }
@@ -676,7 +681,6 @@ max-width:100%;
   height:auto;
 }
 .card-body {
-  width: 300px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -687,6 +691,7 @@ max-width:100%;
   height:auto;
 }
 .custom_card_body{
+  width: 300px !important;
   height:300px;
   margin-top:0;
 }
@@ -867,12 +872,12 @@ max-width:100%;
 @media (min-width:320px) and (max-width: 800px){
   .client_container {
     overflow-x: auto !important;
-    gap: 2rem !important;
+    gap: 3rem !important;
 
   }
 .first_card{
   padding-left:30px;
-  width:280px;
+  /* width:280px; */
 }
 .client_words_container{
   padding-left:30px;
@@ -892,7 +897,7 @@ max-width:100%;
  }
 .client_words{
   padding: 4rem 0 4rem 0px;
-  gap:2rem;
+  gap:5rem;
 }
   
   .footer_container {
@@ -907,7 +912,7 @@ max-width:100%;
 }
 .clients_grid {
   display: grid;
-  grid-template-columns: 6rem auto auto;
+  grid-template-columns: 6rem auto auto ;
   gap:1rem;
 }
 .clients_grid > img {
@@ -946,7 +951,7 @@ max-width:100%;
   gap: 2.5rem;
 }
 .footer_logo_container {
-  width: 150px;
+  width: 120px;
   display: flex ;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1048,11 +1053,10 @@ max-width:100%;
 .terms {
   display:flex;
   gap: 3rem;
+  justify-content: center;
   align-items: center;
 }
 .powered_container {
-  width: 96px;
-  height: 63px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -1080,7 +1084,7 @@ max-width:100%;
     gap:1rem;
   }
   .footer_logo_container {
-    width: 172px;
+    width: 130px;
   }  .footer_logo_container>img{
     margin-left: -1.5rem;
 

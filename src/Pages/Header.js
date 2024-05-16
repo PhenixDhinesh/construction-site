@@ -181,7 +181,7 @@ export default function Header() {
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">
-                          virtula construction
+                        Virtual construction
                         </h3>
                       </Link>
                       <FaAngleRight />
@@ -237,7 +237,7 @@ export default function Header() {
             <div>
             <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">
               {" "}
-              <button>get quote now</button>
+              <button style={{width:"150px"}}>get quote now</button>
             </a>
             </div>
            
