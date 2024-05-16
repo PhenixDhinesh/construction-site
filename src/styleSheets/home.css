@@ -680,20 +680,20 @@ max-width:100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
   margin-top:1rem;
+  justify-content: space-between;
 }
 .custom_card{
-  height:500px;
+  height:auto;
 }
 .custom_card_body{
-  height:260px;
-
+  height:300px;
+  margin-top:0;
 }
 .card-body > .card-title {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  width: 300px;
+  width: 250px;
   font-size: 20px;
   line-height: 29.05px;
   color: #714e4e;
