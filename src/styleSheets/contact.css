@@ -51,9 +51,15 @@
   height:40vh;
 
 } */
-  
+.con_text{
+  font-size:16px;
+  }
 }
-
+@media (max-width: 560px){
+  .con_text{
+    font-size:14px !important;
+    }
+}
 
 @media (min-width: 560px) and (max-width: 1200px) {
   .map_image {
@@ -63,32 +69,44 @@
   .contact_details_container_box_resposive {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     width: 90vw;
+    gap:5rem;
   }
   .phone_email {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
   }
   .contact_details_container_box {
     display: none !important;
   }
   #contact_address {
-    width: 100%;
+    width: 80%;
   }
   .contact_details_container {
   
     padding: 5rem 50px;
   }
+  .con_text{
+    font-size:16px;
+    }
+    .contact_container {
+   
+      width: 50vw !important;
+    
+    }
 }
 .contact_container {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* flex-direction: column; */
   gap: 2rem;
   width: 100%;
+
 }
 .contact_container:hover {
   cursor: pointer;
@@ -106,11 +124,8 @@
   align-items: center;
   gap:7rem;
 }
-.contact_icon,
-.contact_detail {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.con_text{
+font-size:20px;
 }
 .contact_icon > h3 {
   font-family: "Inter", sans-serif;
@@ -175,7 +190,7 @@ display: none;
   .contact_details_container_box {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 3rem;
     padding: 1rem 0;
   }
   .contact_detail {

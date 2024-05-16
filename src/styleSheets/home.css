@@ -85,7 +85,7 @@ cursor: pointer;
 }
 .service_container{
   width:267px;
-  height:201px;
+  height:auto;
   border-radius: 1px 1px 0 0;
   position: absolute;
   z-index:1000;
@@ -93,13 +93,13 @@ cursor: pointer;
   right:25rem;
   background: #F7F7F7;
   flex-direction: column;
-  padding:12px 0px 0 0px;
+  padding:12px 10px;
 }
 
 
 .Off_service_container{
   width:267px;
-  height:201px;
+  height:auto;
   border-radius: 1px 1px 0 0;
   display: flex;
   z-index:1000;
@@ -113,9 +113,11 @@ justify-content: space-between;
 padding:10px 10px;
 align-items: center;
 }
-.Off_service_container > .Off_services > h3{
+.service_text{
   font-weight: 400;
   font-size:16px;
+  line-height: 23px;
+  text-transform: capitalize;
 }
 .service_container > .services{
 display:flex;
@@ -659,21 +661,40 @@ max-width:100%;
   height: 219px;
   border-radius: 8px;
 }
+.custom_card{
+  height:500px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 .card-img-top {
   width: 300px;
+  height:219px;
+}
+.card{
+  height:auto;
 }
 .card-body {
   width: 300px !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: space-between;
+  margin-top:1rem;
+}
+.custom_card{
+  height:500px;
+}
+.custom_card_body{
+  height:260px;
+
 }
 .card-body > .card-title {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 26px;
+  width: 300px;
+  font-size: 20px;
   line-height: 29.05px;
   color: #714e4e;
   text-transform: uppercase;

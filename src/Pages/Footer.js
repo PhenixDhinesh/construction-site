@@ -11,7 +11,7 @@ function Footer() {
     });
   };
   const showInMapClicked = () => {
-    window.open("https://www.google.com/maps/place/Techforge/@11.6711929,78.157041,17z/data=!3m2!4b1!5s0x3babf1b380af700d:0x45f4fa32b2a711ac!4m6!3m5!1s0x3babf1c56dd4f21d:0xf875300e92d15108!8m2!3d11.6711929!4d78.1596159!16s%2Fg%2F11bwflt448?entry=ttu" );
+    window.open("https://maps.app.goo.gl/a8KZYzXmRLgJnB3N9" );
   };
   return (
     <div>

@@ -13,11 +13,13 @@ import client4 from "../assets/client4.svg";
 import Header from "./Header";
 import { motion } from 'framer-motion';
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
   }, []);
+  const navigate = useNavigate()
 
   const values = [
     "Team Work", "Responsibility", "Commitment", "Reliability", "Quality",
@@ -135,56 +137,56 @@ export default function Home() {
             </p>
           </div>
           <div className="virtual_construction_cards">
-            <div class="card" id="first_card">
+            <div class="card custom_card" id="first_card">
               <img class="card-img-top" src={site} alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Virtual Construction & BIM Services:</h5>
+              <div class="card-body custom_card_body">
+                <h5 class="card-title">Virtual Construction & BIM Services</h5>
                 <p class="card-text">
                   Experience the future of construction with our cutting-edge
                   virtual construction and Building Information Modeling (BIM)
                   services. We create digital models for superior visualization,
                   streamlined communication, and enhanced project efficiency.
                 </p>
-                <button>read more...</button>
+                <button onClick={()=> navigate('/service')}>read more...</button>
               </div>
             </div>
-            <div class="card">
+            <div class="card custom_card">
               <img class="card-img-top" src={site} alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Structural Engineering Services:</h5>
+              <div class="card-body custom_card_body">
+                <h5 class="card-title">Structural Engineering Services</h5>
                 <p class="card-text">
                   Our structural engineering experts prioritize the safety and
                   stability of your project. We provide comprehensive services
                   including analysis, design, and detailed drawings to ensure a
                   strong and lasting structure.{" "}
                 </p>
-                <button>read more...</button>
+                <button  onClick={()=> navigate('/service')}>read more...</button>
               </div>
             </div>
-            <div class="card">
+            <div class="card custom_card">
               <img class="card-img-top" src={site} alt="" />
-              <div class="card-body">
-                <h5 class="card-title">MEP Engineering Services:</h5>
+              <div class="card-body custom_card_body">
+                <h5 class="card-title">MEP Engineering Services</h5>
                 <p class="card-text">
                   Our MEP engineers specialize in the design and coordination of
                   mechanical, electrical, and plumbing systems. We create
                   efficient and functional systems that meet all building
                   requirements.
                 </p>
-                <button>read more...</button>
+                <button  onClick={()=> navigate('/service')}>read more...</button>
               </div>
             </div>
-            <div class="card" id="last-card">
+            <div class="card custom_card" id="last-card">
               <img class="card-img-top" src={site} alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Support Services:</h5>
+              <div class="card-body custom_card_body">
+                <h5 class="card-title">Support Services</h5>
                 <p class="card-text">
                   We offer a complete suite of support services to empower your
                   project's success. This includes accurate material estimation,
                   feasibility studies, and value engineering to optimize costs
                   while maintaining quality.{" "}
                 </p>
-                <button>read more...</button>
+                <button  onClick={()=> navigate('/service')}>read more...</button>
               </div>
             </div>
           </div>

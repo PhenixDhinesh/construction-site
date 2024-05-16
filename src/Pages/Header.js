@@ -51,6 +51,12 @@ export default function Header() {
                 <p style={{ fontSize: "16px" }}> Home </p>
               </ListItem>
             </Link>
+            <Link to="/about" className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}>
+              {" "}
+              <ListItem onClick={toggleDrawer(false)}>
+                <p style={{ fontSize: "16px" }}>About us</p>
+              </ListItem>
+            </Link>
             <ListItem onClick={toggleServicesDropdown} className={`${isActive('/service')? 'activeLink' : 'off_service'}`}>
               <p style={{ fontSize: "16px" }}>Our Service</p>
               <div style={{ marginTop: "-4px",marginLeft:"10px" }}>
@@ -72,7 +78,7 @@ export default function Header() {
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     {" "}
-                    <h3 style={{ fontSize: "16px", fontWeight: "400" }}>
+                    <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
                       Virtual construction
                     </h3>
                   </Link>
@@ -86,7 +92,7 @@ export default function Header() {
                     to="/service"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
-                    <h3 style={{ fontSize: "16px", fontWeight: "400" }}>
+                    <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
                       Structural engineering service
                     </h3>
                   </Link>
@@ -101,7 +107,7 @@ export default function Header() {
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     {" "}
-                    <h3 style={{ fontSize: "16px", fontWeight: "400" }}>
+                    <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
                       MEP engineering service
                     </h3>
                   </Link>
@@ -115,7 +121,7 @@ export default function Header() {
                     to="/service"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
-                    <h3 style={{ fontSize: "16px", fontWeight: "400" }}>
+                    <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
                       Support service
                     </h3>
                   </Link>
@@ -123,12 +129,7 @@ export default function Header() {
                 </ListItem>
               </div>
             )}
-            <Link to="/about" className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}>
-              {" "}
-              <ListItem onClick={toggleDrawer(false)}>
-                <p style={{ fontSize: "16px" }}>About us</p>
-              </ListItem>
-            </Link>
+          
             <Link
               to="/contact"
               className={`${isActive('/contact')? 'activeLink' : 'canvasLink'}`}
@@ -160,6 +161,13 @@ export default function Header() {
               <Link to="/" className={`${isActive('/')? 'activeLink' : 'canvasLink'}`}>
                 <p className="links">Home</p>
               </Link>
+              <Link
+                to="/about"
+                className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}
+              >
+                {" "}
+                <p>About us</p>
+              </Link>
               <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -172,7 +180,7 @@ export default function Header() {
                         to="/service"
                         style={{ textDecoration: "none", color: "#000" }}
                       >
-                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">
                           virtula construction
                         </h3>
                       </Link>
@@ -184,7 +192,7 @@ export default function Header() {
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         {" "}
-                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">
                           structural engineering service
                         </h3>
                       </Link>
@@ -196,7 +204,7 @@ export default function Header() {
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         {" "}
-                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">
                           MEP engineering service
                         </h3>
                       </Link>
@@ -207,7 +215,7 @@ export default function Header() {
                         to="/service"
                         style={{ textDecoration: "none", color: "#000" }}
                       >
-                        <h3 style={{ fontWeight: "400", fontSize: "16px" }}>
+                        <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">
                           support service
                         </h3>
                       </Link>
@@ -217,13 +225,7 @@ export default function Header() {
                 )}
               </div>
 
-              <Link
-                to="/about"
-                className={`${isActive('/about')? 'activeLink' : 'canvasLink'}`}
-              >
-                {" "}
-                <p>About us</p>
-              </Link>
+            
               <Link
                 to="/contact"
                 className={`${isActive('/contact')? 'activeLink' : 'canvasLink'}`}
