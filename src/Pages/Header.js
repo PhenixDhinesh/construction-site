@@ -89,7 +89,7 @@ export default function Header() {
                   onClick={toggleDrawer(false)}
                 >
                   <Link
-                    to="/service"
+                    to="/service/structural"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
@@ -103,7 +103,7 @@ export default function Header() {
                   onClick={toggleDrawer(false)}
                 >
                   <Link
-                    to="/service"
+                    to="/service/mep"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     {" "}
@@ -118,7 +118,7 @@ export default function Header() {
                   onClick={toggleDrawer(false)}
                 >
                   <Link
-                    to="/service"
+                    to="/service/support"
                     style={{ textDecoration: "none", color: "#000" }}
                   >
                     <h3 style={{ fontSize: "16px", fontWeight: "400" }} className="service_text">
@@ -188,7 +188,7 @@ export default function Header() {
                     </div>
                     <div className="services">
                       <Link
-                        to="/service"
+                        to="/service/structural"
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         {" "}
@@ -200,7 +200,7 @@ export default function Header() {
                     </div>
                     <div className="services">
                       <Link
-                        to="/service"
+                        to="/service/mep"
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         {" "}
@@ -212,7 +212,7 @@ export default function Header() {
                     </div>
                     <div className="services">
                       <Link
-                        to="/service"
+                        to="/service/support"
                         style={{ textDecoration: "none", color: "#000" }}
                       >
                         <h3 style={{ fontWeight: "400", fontSize: "16px" }} className="service_text">

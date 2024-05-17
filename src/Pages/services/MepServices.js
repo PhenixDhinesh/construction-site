@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 import { LiaAngleDownSolid, LiaAngleUpSolid } from "react-icons/lia";
 
-import "../styleSheets/service.css";
-function Services() {
+import "../../styleSheets/service.css";
+function MepServices() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
   }, []);
@@ -38,19 +38,20 @@ function Services() {
     setShowTab(showTab === index ? 0 : index);
   };
 
+
   return (
     <div>
       <Header />
 
 
-      <div className="service_banner" style={{marginTop:"8rem"}}>
+      <div className="service_banner" style={{ marginTop: "6.3rem" }}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
         <div className="content">
           <div className="content_text">
             <h3>
-            Mastering Every Facet of Construction: Building Solutions Crafted for Your Needs 
+           Mep engineering services
 
             </h3>
             <p>
@@ -66,11 +67,12 @@ function Services() {
         </div>
       </div>
 
-      <div className="service_res_banner" style={{marginTop:"8rem"}}>
+      <div className="service_res_banner" style={{ marginTop: "5rem" }}>
         <div className="content">
           <div className="content_text">
             <h3>
-            Mastering Every Facet of Construction
+            Mep engineering services
+
             </h3>
             <p>
             Decisive Engineering delivers comprehensive engineering solutions globally, working closely with you to translate your vision into exceptional, industry-leading results.
@@ -114,7 +116,7 @@ function Services() {
           {/* Define the tabs with click handlers to set showTab */}
           <div className="offers">
             <div className="offers_name">
-              <h3>Virtual Construction</h3>
+              <h3>MEP design</h3>
               {showTab === 1 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -138,7 +140,7 @@ function Services() {
             )}
 
             <div className="offers_name">
-              <h3> Structural Engineering Services</h3>
+              <h3> Shop drawings </h3>
               {showTab === 2 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -161,7 +163,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3>MEP Engineering Services</h3>
+              <h3>builderswork drawings</h3>
               {showTab === 3 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -184,7 +186,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3> Support Services</h3>
+              <h3>AS-Built drawings</h3>
               {showTab === 4 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -223,7 +225,7 @@ function Services() {
         <div className="offers_container" id="res_offer">
           <div className="offers">
             <div className="offers_name">
-              <h3>  Virtual Construction</h3>
+              <h3> MEP design</h3>
               {showTab === 1 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -250,7 +252,7 @@ function Services() {
             )}
 
             <div className="offers_name">
-              <h3> Structural Engineering Services</h3>
+              <h3> Shop drawings </h3>
               {showTab === 2 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -277,7 +279,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3> MEP Engineering Services</h3>
+              <h3>builderswork drawings</h3>
               {showTab === 3 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -303,7 +305,7 @@ function Services() {
               </div>
             )}
             <div className="offers_name">
-              <h3> Support Services</h3>
+              <h3> AS-Built drawings </h3>
               {showTab === 4 ? (
                 <LiaAngleUpSolid
                   className="icon"
@@ -338,4 +340,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default MepServices;

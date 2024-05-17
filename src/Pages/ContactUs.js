@@ -17,7 +17,7 @@ function ContactUs() {
     <div>
       <Header />
 
-      <div className="contact_banner" style={{ marginTop: "8rem" }}>
+      <div className="contact_banner" style={{ marginTop: "6.3rem" }}>
         {/* <img src={banner} className="banner_img" alt="" /> */}
         {/* <img src={landing} className="res_banner_img" alt="" /> */}
 
@@ -37,7 +37,7 @@ function ContactUs() {
         </div>
       </div>
 
-      <div className="contact_res_banner" s style={{ marginTop: "8rem" }}>
+      <div className="contact_res_banner" style={{ marginTop: "5rem" }}>
         <div className="content">
           <div className="content_text">
           <h3>Let's Get Associated with Your Project</h3>
@@ -75,7 +75,7 @@ function ContactUs() {
           <div className="contact_container">
             <div className="contact_icon">
               <a
-                href={`tel:${+918124594875}`}
+                href={`tel:${+919629443771}`}
                 style={{ textDecoration: "none", color: "#000000" }}
               >
                 <div className="contact_icon_box">
@@ -87,10 +87,10 @@ function ContactUs() {
 
                 <a
                 className="con_text"
-                  href={`tel:${+918124594875}`}
+                  href={`tel:${+919629443771}`}
                   style={{ textDecoration: "none", color: "#000000" }}
                 >
-                  +91 81245 94875
+                +91 96 294 43771
                 </a>
 
             </div>
@@ -99,7 +99,7 @@ function ContactUs() {
             <div className="contact_icon">
               <a
                 className="contact_icon"
-                href="mailto:email@example.com?subject=Hello&body=I'd like to discuss..."
+                href="mailto:contact@decisiveengg.com ?subject=Hello&body=I'd like to discuss..."
                 style={{ textDecoration: "none", color: "#000000" }}
               >
                 <div className="contact_icon_box">

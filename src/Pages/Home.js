@@ -32,7 +32,7 @@ export default function Home() {
     <div>
       <Header />
 
-      <div className="banner" style={{ marginTop: "8rem" }}>
+      <div className="banner" style={{ marginTop: "6.3rem" }}>
         <div className="content">
           <div className="content_text">
             <h3>Precision Engineering. Built to Exceed</h3>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="res_banner" style={{ marginTop: "8rem" }}>
+      <div className="res_banner" style={{ marginTop: "5rem" }}>
         <div className="content">
           <div className="content_text">
             <h3>Precision Engineering. Built to Exceed</h3>
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
       </div>
       <div className="core_values_container">
-        <h3>Core vlaues</h3>
+        <h3>Core values</h3>
         <div class="core_values">
         <motion.div
           className="animation_scroll"
@@ -234,7 +234,7 @@ export default function Home() {
               <p>Member, NRT Apartments</p>
               <h3>Nadarajan</h3>
             </div>
-            <div className="card-body">
+            <div className="card-body client_body">
               <p className="about_client">
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
@@ -250,7 +250,7 @@ export default function Home() {
               <h3>Abdul rahman</h3>
               <p>MD, Abdhul real Estates</p>
             </div>
-            <div className="card-body">
+            <div className="card-body client_body">
               <p className="about_client">
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.
@@ -260,13 +260,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="card card__contain" id="last-card">
+          <div className="card last_card" id="card__contain">
             <div className="clients_grid">
               <img src={client4} alt="" />
               <h3>Dr.P Kumar</h3>
               <p>Founder PKG Hospital</p>
             </div>
-            <div className="card-body">
+            <div className="card-body client_body">
               <p className="about_client">
                 Curabitur molestie sit amet urna at euismod. In non vulputate
                 urna. Nam faucibus est eu lacus ornare, ut cursus massa semper.

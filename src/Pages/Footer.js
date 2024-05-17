@@ -2,7 +2,7 @@ import React from 'react'
 import whiteLogo from "../assets/DE_logo White.svg";
 import poweredBy from "../assets/bluice.svg";
 import { Link } from 'react-router-dom';
-
+import qro from '../assets/QRO.jpg'
 function Footer() {
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -21,7 +21,7 @@ function Footer() {
           <div className="footer_logo">
             <div className="footer_logo_container">
             <a href="https://www.decisiveengg.com/" target="blank"><img src={whiteLogo} alt="" /></a>
-
+<img src={qro} alt="" />
             </div>
             <p>
               Integer in est elit. Mauris placerat blandit massa quis aliquam.
@@ -39,8 +39,8 @@ function Footer() {
             </div>
 
             <div className="contact-Container">
-            <a href={`tel:${+91983432423}`}>+91 983432423</a>
-              <a href="mailto:email@example.com?subject=Hello&body=I'd like to discuss...">Contact@gmail.com</a>
+            <a href={`tel:${+919629443771}`}>+91 96 294 43771</a>
+              <a href="mailto:contact@decisiveengg.com?subject=Hello&body=I'd like to discuss...">Contact@gmail.com</a>
               <p className="address" onClick={showInMapClicked}>
                 SF NO 385 4 POST OFF EAST Tharamangalam, Salem - 636 502, India
               </p>
