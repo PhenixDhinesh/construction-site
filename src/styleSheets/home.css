@@ -578,7 +578,6 @@ max-width:100%;
    flex-direction: column; 
    /* padding:0 50px; */
    gap:5rem;
-  height:65vh;
 
 }
 @media  (min-width:768px) and (max-width:930px){
@@ -650,14 +649,7 @@ max-width:100%;
 }
 }
 @media (max-width: 560px){
-  .virtual_construction_box {
-    display: flex;
-    flex-direction: column; 
-    /* padding:0 50px; */
-    gap:5rem;
-   height:65vh;
  
- }
 
   .virtual_construction_title > h3{
     font-size: 28px;
@@ -683,9 +675,7 @@ max-width:100%;
     font-family: "Roboto", sans-serif;
     color: #000000;
   }
-  .custom_card{
- 
-  }
+
 }
 @media (max-width: 768px) {
   .virtual_construction_title {
@@ -693,7 +683,7 @@ max-width:100%;
     padding:0 30px;
   }
   .virtual_construction_box {
- height:75vh !important; 
+ height:100% !important; 
  
  }
   .virtual_construction_contianer {
@@ -708,7 +698,6 @@ max-width:100%;
   flex-direction: column;
   padding-right:0 !important;
   padding-left: 0px;
-  height:65vh;
 
 }
 
@@ -764,6 +753,8 @@ max-width:100%;
   align-items: center;
   justify-items: center;
   scrollbar-width: none;
+  height:70vh;
+
 }
 .virtual_construction_cards > .cards > img {
   height: 219px;
@@ -788,10 +779,7 @@ max-width:100%;
   justify-content: space-between;
   width: 300px !important;
 }
-.custom_card{
-  height:51vh !important;
 
-}
 .custom_card_body{
   width: 300px !important;
   margin-top:0;
@@ -920,7 +908,7 @@ max-width:100%;
 .client_words {
   display: flex;
   flex-direction: column;
-  gap:4rem;
+  gap:7rem;
   padding: 5rem  50px;
 
 }
